@@ -1,0 +1,140 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ html {
+     font-size: 62.5%;
+ }
+
+ body {
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+ .menu {
+     background-color: rgb(214, 98, 170);
+     font-weight: bold;
+     font-size: 15px;
+
+ }
+
+ .contenedorPrincipal {
+     display: grid;
+     grid-template-columns: repeat(4, 0.2fr);
+     grid-template-rows: repeat(7, 0.2fr);
+     grid-template-areas:
+         "titulo titulo perfil perfil "
+         /*titulo : logo posible buscar Perfil:  session, logocarrito. */
+         "header header header header"
+         /*header : agregar mas cosas Flores,Box/desayunos, postres*/
+         "principalCarrousel principalCarrousel principalCarrousel principalCarrousel"
+         /*carrusel pequeñoprincipal: mas reducido: Flores,Box/desayunos, Regalos, postres*/
+         "principal principal principal principal"
+         /*Flores,Box/desayuno, Regalos , Postres */
+         "motivo motivo motivo motivo"
+         /*motivo: Amor, Aniversario,Cumpleaños,Aliviate pronto/condolencias, Graduacion,dia del hombre, de la mujer,dia de la mascota*/
+         "redes redes redes redes"
+         "footer footer footer footer"
+     ;
+
+     justify-content: center;
+     background-color: white;
+
+ }
+
+ .imagenTitutlo {
+     grid-area: titulo;
+     align-items: center;
+     background-color: white;
+ }
+
+ .perfil {
+     grid-area: perfil;
+     background-color: white;
+ }
+
+ .header {
+     grid-area: header;
+
+ }
+
+ .contenedorCarrousel {
+     grid-area: principalCarrousel;
+ }
+
+ .principal {
+     grid-area: principal;
+ }
+
+ .motivo {
+     grid-area: motivo;
+ }
+
+ .redes {
+     grid-area: redes;
+ }
+
+ .footer {
+     grid-area: footer;
+ }
+
+ .menu li {
+     display: inline-block;
+     padding-left: 120px;
+ }
+
+
+ a {
+     text-decoration: none;
+     color: gold;
+ }
+
+ a:hover {
+     color: white;
+
+ }
+
+ .imagenTitutlo {
+     display: flex;
+     justify-content: center;
+     padding: 5px 100px;
+     text-align: left;
+
+ }
+
+ .sizeLogo {
+     width: 160px;
+     height: 90px;
+
+ }
+
+ .perfil {
+
+     display: flex;
+     justify-content: right;
+     align-items: right;
+     padding: 25px 150px;
+ }
+
+ .iconoInicioSesion {
+     width: 25px;
+     height: 25px;
+ }
+
+ .carrito {
+     width: 25px;
+     height: 25px;
+ }
+
+
+ /* focus para el texto */
+ input:focus {
+     height: 30px;
+     background-color: lightpink;
+ }
+
+ input[type="checkbox"]:checked{
+    box-shadow: 0 0 0 3px pink;
+
+ }
