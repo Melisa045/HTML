@@ -99,6 +99,7 @@
  .sizeLogo {
      width: 170px;
      height: 100px;
+     align-items: left;
 
  }
 
