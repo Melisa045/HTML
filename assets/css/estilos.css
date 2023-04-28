@@ -6,77 +6,80 @@
 
  html {
      font-size: 62.5%;
- }
-
- body {
      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  }
 
- .menu {
-     background-color: rgb(214, 98, 170);
-     font-size: 22px;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+ body {
+     width: 100%;
  }
 
  .contenedorPrincipal {
      display: grid;
      grid-template-columns: repeat(4, 0.2fr);
-     grid-template-rows: repeat(6, 0.05fr);
+     grid-template-rows: repeat(6, 0.2fr);
      grid-template-areas:
-         "titulo titulo perfil perfil "
-         /*titulo : logo posible buscar Perfil:  session, logocarrito. */
+         "perfil perfil perfil perfil "
          "header header header header"
-         /*header : agregar mas cosas Flores,Box/desayunos, postres*/
-         "principalCarrousel principalCarrousel principalCarrousel principalCarrousel"
-         /*carrusel pequeñoprincipal: mas reducido: Flores,Box/desayunos, Regalos, postres*/
-         "principalProductos principalProductos principalProductos principalProductos"
-         /*Flores,Box/desayuno, Regalos , Postres */
-         /*   "motivo motivo motivo motivo" */
-         /*motivo: Amor, Aniversario,Cumpleaños,Aliviate pronto/condolencias, Graduacion,dia del hombre, de la mujer,dia de la mascota*/
+         "carousel carousel carousel carousel"
+         "productos productos productos productos"
          "redes redes redes redes"
          "pie pie pie pie"
      ;
-
      justify-content: center;
      background-color: white;
 
  }
 
- .logoHeader {
-     display: flex;
- }
 
- .imagenTitutlo {
-     grid-area: titulo;
-     justify-content: left;
-     align-items: left;
-     background-color: white;
- }
-
+ /* ------------------- PERFIL--------------------------- */
  .perfil {
      grid-area: perfil;
      background-color: white;
-     display: flex;
-     justify-content: right;
-     align-items: right;
-     padding: 25px 660px;
  }
 
- .headerProductos {
+ .ancho {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     align-content: center;
+     width: 100%;
+     padding: 0;
+     margin: 0;
+ }
+
+ .sizeLogo {
+     width: 170px;
+     height: 90px;
+
+ }
+
+ .iconoInicioSesion {
+     width: 28px;
+     height: 28px;
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+ /* --------------------- HEADER------------------------------ */
+ .header {
      grid-area: header;
  }
 
- .headerProductosSize {
-     font-size: 25px;
+ .menu {
+     background-color: rgb(179, 82, 170);
+     font-size: 20px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     align-content: center;
+     width: 100%;
+     padding: 0;
+     margin: 0;
+     list-style: none;
  }
-
- .menu li {
-     display: inline-block;
-     padding-left: 80px;
-     font-size: 10px;
- }
-
 
  a {
      text-decoration: none;
@@ -88,160 +91,26 @@
 
  }
 
- .imagenTitutlo {
-     display: flex;
-     justify-content: center;
-     padding: 5px 100px;
-     text-align: left;
+ input:focus {
+     height: 30px;
+     background-color: white;
+ }
+
+ input[type="checkbox"]:checked {
+     box-shadow: 0 0 0 3px white;
 
  }
 
- .sizeLogo {
-     width: 170px;
-     height: 100px;
-     align-items: left;
+ /* ------------------------- CAROUSEL------------------------------- */
 
- }
-
- .iconoInicioSesion {
-     width: 28px;
-     height: 28px;
- }
-
- .carrito {
-     width: 28px;
-     height: 28px;
- }
-
- .contenedorCarrousel {
-     grid-area: principalCarrousel;
-     padding-top: 0%;
-     margin-top: 0%;
- }
-
-
- .sizeCarousel {
-     display: flex;
-     width: 70%;
-     height: 400px;
+ .contenedorCarousel {
+     grid-area: carousel;
+     width: 100%;
  }
 
  .tituloCarousel {
      text-align: center;
      color: brown;
-
- }
-
- /* focus para el texto */
- input:focus {
-     height: 30px;
-     background-color: lightpink;
- }
-
- input[type="checkbox"]:checked {
-     box-shadow: 0 0 0 3px pink;
-
- }
-
-
-
- .principalProductos {
-     grid-area: principalProductos;
- }
-
- .princContenedor {
-     display: flex;
-     padding: 10px 40px;
- }
-
- .tituloPrincipal {
-     color: palevioletred;
-     font-weight: bold;
-     size: 20px;
-     padding: 15px 35px;
-     margin: 5px 35px;
- }
-
- .subtituloPrincipal {
-     padding: 0 10px;
-     color: yellowgreen;
-     padding: 0 30px;
-     font-weight: bold;
-     font-size: 20px;
-
- }
-
-
- .spaceImgPrincipal {
-     padding: 0 40px;
-     margin: 5px 5px;
- }
-
- .spaceImgPrinArre {
-     padding: 0 10px;
-     margin: 5px 5px;
- }
-
- .prinBtnCarForm {
-     border-radius: 0 0 10px 10px;
-     background-color: azure;
-     padding: 0 20px;
- }
-
- .prinBtnCar {
-     font-size: 12px;
-     /*    height: 35px; */
-     /* background-position: 97.5% 50% !important; */
-     cursor: pointer;
-     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-     text-align: center;
-     text-transform: uppercase;
-     color: yellowgreen;
-     margin: 0 18px;
-
- }
-
- .sizePrincImage {
-     width: 270px;
-     height: 250px;
- }
-
- .motivo {
-     grid-area: motivo;
- }
-
- .redes {
-     grid-area: redes;
-     margin-top: 15px;
-     margin-bottom: 15px;
- }
-
-
-
- #arriba {
-
-     padding: 0px 350px 0px 0px;
-     font-size: 15px;
- }
-
- .redesContenedor {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-
-
- }
-
- .redesComentario {
-     font-size: 20px;
- }
-
-
- .redesSizeIcon {
-     width: 40px;
-     width: 40px;
-     margin: 5px;
-
  }
 
  .carousel-control-prev-icon,
@@ -249,45 +118,119 @@
      filter: invert(108%);
  }
 
+
+ /* --------------------- PRODUCTOS ----------------------------- */
+ .productos {
+     grid-area: productos;
+ }
+
+ .tituloPrincipal {
+     color: palevioletred;
+     font-weight: bold;
+     size: 20px;
+     padding: 1% 1%;
+ }
+
+ .princContenedor {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     align-content: center;
+     width: 100%;
+     padding: 0;
+     margin: 0;
+ }
+
+ .spaceImgPrincipal {
+     padding: 0 30px;
+     margin: 3px 3px;
+ }
+
+ .sizePrincImage {
+     width: 300px;
+     height: 280px;
+ }
+
+ .subtituloPrincipal {
+     text-align: center;
+     color: yellowgreen;
+     font-weight: bold;
+     font-size: 20px;
+
+ }
+
+ .prinBtnCarForm {
+     text-align: center;
+     justify-content: center;
+     align-items: center;
+     align-content: center;
+
+ }
+
+ .prinBtnCar {
+     font-size: 12px;
+     cursor: pointer;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     text-align: center;
+     text-transform: uppercase;
+     color: yellowgreen;
+     justify-content: center;
+     align-items: center;
+     align-content: center;
+ }
+
+ /* --------------------- REDES ----------------------------- */
+
+ .redes {
+     grid-area: redes;
+     background-color: rgb(247, 200, 207);
+     width: 100%;
+ }
+
+ .redesContenedor {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     align-content: center;
+     width: 100%;
+     padding: 0;
+     margin: 0;
+ }
+
+ .arriba {
+     font-size: 20px;
+     color: black;
+ }
+
+ .redesComentario {
+     font-size: 20px;
+ }
+
+ .redesSizeIcon {
+     width: 50px;
+     height: 50px;
+     margin: 5px;
+     border-style: groove;
+ }
+
+ /* --------------------- FOOTER ----------------------------- */
  footer {
      grid-area: pie;
-     background-color: lightcyan;
-     background-image: url(../img/fondoFooter.jfif);
-     display: flex;
+     background-color: rgb(230, 237, 245);
+     background-image: url(../assets/img/fondoFooter.jfif);
+     width: 100%;
  }
 
  .contenedorFooter {
      display: flex;
+     justify-content: space-around;
      align-items: center;
-     justify-content: center;
-     font-size: 12px;
+     align-content: center;
+     width: 100%;
+     padding: 0;
+     margin: 0;
      color: brown;
-
- }
-
- .footerSuscribete {
-     padding: 0 50px;
-     margin: 0 75px;
-
- }
-
- .footerGeneral {
-     padding: 0 50px;
-     margin: 0 75px;
-
- }
-
- .footerPoliticas {
-     padding: 0 50px;
-     margin: 0 75px;
-
- }
-
- .navFooter {
-     display: flex;
-     list-style: none;
-
-
+     font-size: 15px;
  }
 
  footer ul li {
@@ -295,14 +238,9 @@
      color: black;
  }
 
+
  .colorLink {
      color: black;
-
- }
-
- .colorLink:hover {
-     color: blueviolet;
-     font-weight: bold;
  }
 
  .sizeIconEmailFooter {
@@ -310,41 +248,35 @@
      margin: 3px;
  }
 
- .seccionPerfil {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     padding-left: 530px;
-     width: 70%;
- }
+  /* --------------------- ARREGLOS.HTML ----------------------------- */
 
  .formPerfil {
-     font-size: 25px;
-     font-family: Georgia, 'Times New Roman', Times, serif;
-     color: rgb(179, 82, 170);
- }
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(179, 82, 170);
+}
 
- .fontInput {
-     color: rgb(212, 163, 163);
- }
+.formPerfilSelected {
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: pink;
+    font-weight: bold;
+}
 
- .formPerfilSelected {
-     font-size: 15px;
-     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-     color: pink;
-     font-weight: bold;
- }
+.princContenedor {
+    display: flex;
+    padding: 10px 40px;
+}
 
- .formPerfilBtn {
-     font-size: 18px;
-     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-     color: rgb(179, 82, 170);
-     background-color: rgb(53, 230, 230);
- }
+.spaceImgPrinArre {
+    padding: 0 10px;
+    margin: 5px 5px;
+}
 
+/* --------------------- MEDIA RESOLUCION ----------------------------- */
 
  /* TAMAÑO TABLET 768PX */
- @media screen and (max-width:768px) {
+   @media screen and (max-width:768px) {
 
      .contenedorPrincipal {
 
@@ -366,11 +298,7 @@
          width: 50%;
      }
 
-     .footer {
 
-         grid-area: footer;
-         width: 50%;
-     }
 
      .sizePrincImage {
          width: 150px;
@@ -469,4 +397,4 @@
          content-visibility: hidden;
      }
 
- }
+ } 
