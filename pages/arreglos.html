@@ -1,188 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arreglo de Flores</title>
-    <link rel="shortcut icon" href="../assets/icons/icon.jfif" type="image/x-icon">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="../assets/css/estilos.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Majestic</title>
+  <link rel="shortcut icon" href="../assets/icons/icon.jfif" type="image/x-icon">
 
 
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 
-<body class="contenedorPrincipal">
+<body>
 
-    <div>
-      <div class="logoHeader">
+  <div class="contenedorPrincipal">
+
+    <div class="perfil">
+      <div class="ancho">
+
         <div class="imagenTitutlo">
-          <img src="../assets/icons/LogoFrase.jpg" alt="logo" class="sizeLogo">
+          <img src="../assets/icons/LogoFrase.jpg" title="logo" class="sizeLogo">
         </div>
-  
-        <div class="perfil">
-            <a href="../pages/perfil.html" title="Inicio Sesion">
-                <img src="../assets/icons/iconLogin.png"
-              class="iconoInicioSesion"> </a>
-  
+
+        <div class="registrarse">
+          <a href="./perfil.html" title="Inicio Sesion">
+            <img src="../assets/icons/iconLogin.png" class="iconoInicioSesion">
+          </a>
+
           <a href="../index.html" title="Carrito">
-            <img src="../assets/icons/iconCarrito.png" class="iconoInicioSesion"> </a>
-  
+            <img src="../assets/icons/iconCarrito.png" class="iconoInicioSesion">
+          </a>
+
           <a href="../index.html" title="Buscar">
-            <img src="../assets/icons/iconBuscar.png" class="iconoInicioSesion"> </a>
-  
+            <img src="../assets/icons/iconBuscar.png" class="iconoInicioSesion">
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <header class="header">
+      <nav>
+        <ul class="menu">
+          <li><a href="../index.html">PRINCIPAL</a></li>
+          <li><a href="./arreglos.html">ARREGLOS</a></li>
+          <li><a href="./peluches.html">PELUCHES</a></li>
+          <li><a href="./contactos.html">CONTACTOS</a></li>
+          <li><a href="./registrarse.html">REGISTRARSE</a></li>
+        </ul>
+
+      </nav>
+    </header>
+
+
+    <div class="productos">
+      <h2 class="tituloPrincipal">LAS FLORES MAS DESTACADAS</h2>
+      <div class="princContenedor">
+
+        <div class="spaceImgPrincipal">
+          <img src="../assets/img/ramoTulipanes.jfif" alt="ramoRosas" title="Ramo Tulipanes" class="sizePrincImage">
+          <div>
+            <h3 class="subtituloPrincipal">Ramo Tulipanes</h3>
+          </div>
+          <div>
+            <h3 class="subtituloPrincipal"> S/180.00</h3>
+          </div>
+          <form action="" method="post" class="prinBtnCarForm">
+            <input type="submit" value="Agregar al Carrito" class="prinBtnCar">
+
+          </form>
+        </div>
+
+        <div class="spaceImgPrincipal">
+          <img src="../assets/img/ramoClaveles.jfif" alt="ramoClaveles" title="Ramo Claveles" class="sizePrincImage">
+          <div>
+            <h3 class="subtituloPrincipal">Ramo Claveles</h3>
+          </div>
+          <div>
+            <h3 class="subtituloPrincipal"> S/120.00</h3>
+          </div>
+          <form action="" method="post" class="prinBtnCarForm">
+            <input type="submit" value="Agregar al Carrito" class="prinBtnCar">
+          </form>
+        </div>
+
+
+        <div class="spaceImgPrincipal">
+          <img src="../assets/img/ramoGerberas.jfif" alt="ramoGerberas" title="Ramo Gerberas" class="sizePrincImage">
+          <div>
+            <h3 class="subtituloPrincipal">Ramo Gerberas</h3>
+          </div>
+          <div>
+            <h3 class="subtituloPrincipal"> S/80.00</h3>
+          </div>
+          <form action="" method="post" class="prinBtnCarForm">
+            <input type="submit" value="Agregar al Carrito" class="prinBtnCar">
+
+          </form>
+        </div>
+
+        <div class="spaceImgPrincipal">
+          <img src="../assets/img/ramoGirasoles.jfif" alt="ramoGirasoles" title="Ramo Girasoles" class="sizePrincImage">
+          <div>
+            <h3 class="subtituloPrincipal">Ramo Girasoles</h3>
+          </div>
+          <div>
+            <h3 class="subtituloPrincipal"> S/130.00</h3>
+          </div>
+          <form action="" method="post" class="prinBtnCarForm">
+            <input type="submit" value="Agregar al Carrito" class="prinBtnCar">
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="redes">
+    <div class="redesContenedor">
+
+      <div class="arriba">
+        <a href="../index.html" id="arriba">Ir arriba</a>
+      </div>
+
+      <div class="redesSociales">
+        <h3 class="redesComentario">Siguenos en :</h3>
+        <a href="https://www.facebook.com">
+          <img class="redesSizeIcon" src="../assets/icons/facebookIcon.jfif" alt="facebookIcon"></a>
+        <a href="https://www.instagram.com">
+          <img class="redesSizeIcon" src="../assets/icons/instagramIcon.jfif" alt="InstagramIcon"></a>
+        <a href="https://www.twitter.com">
+          <img class="redesSizeIcon" src="../assets/icons/twiterIcon.png" alt="twiterIcon"></a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="contenedorFooter">
+
+      <nav>
+        <div class="footerGeneral">
+          <ul>
+
+            <h3>GENERAL</h3>
+
+            <li>
+              <a class="colorLink" href="./perfil.html">Crear Cuenta</a>
+            </li>
+
+            <li>
+              <a class="colorLink" href="../index.html">Horarios de atención</a>
+            </li>
+
+            <li>
+              <a class="colorLink" href="../index.html">Formas de Pago</a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+
+      <div class="footerPoliticas">
+
+        <ul>
+
+          <h3>POLITICAS</h3>
+
+          <li>
+            <a class="colorLink" href="../index.html">Políticas de Reembolso</a>
+          </li>
+
+          <li>
+            <a class="colorLink" href="../index.html">Términos y condiciones</a>
+          </li>
+
+          <li>
+            <a class="colorLink" href="../index.html">Políticas de entrega</a>
+          </li>
+
+        </ul>
+      </div>
+      </nav>
+
+
+      <div class="footerSuscribete">
+        <h3>SUSCRÍBETE Y RECIBE OFERTAS</h3>
+        <p class="colorLink">"Déjanos tu email y recibe ofertas exclusivas" </p>
+        <div>
+          <form action="" method="post">
+
+            <div>
+              <input type="email" name="email" placeholder="Ingresa tu correo">
+              <input type="hidden" name="action" value="0">
+              <button name="enviarnews" type="submit">
+                <img src="../assets/icons/emailIcon.jfif" class="sizeIconEmailFooter" alt="">
+              </button>
+
+            </div>
+          </form>
         </div>
       </div>
 
-        <header class="headerProductos">
-            <nav>
-                <ul class="menu">
-                    <li><a href="../index.html" class="headerProductosSize">PRINCIPAL</a></li>
-                    <li><a href="./arreglos.html" class="headerProductosSize">ARREGLOS</a></li>
-                    <li><a href="./peluches.html" class="headerProductosSize">PELUCHES</a></li>
-                    <li><a href="./contactos.html" class="headerProductosSize">CONTACTOS</a></li>
-                    <li><a href="./perfil.html" class="headerProductosSize">REGISTRARSE</a></li>
-                </ul>
-
-            </nav>
-        </header>
-
-
-        <main class="principal">
-            <h1 class="formPerfil">CATALOGO RAMOS</h1>
-            <table class="princContenedor spaceImgPrinArre">
-                <tr>
-                    <td><img src="../assets/img/ramoRosasPinterist.jfif" title="Rosas" class="sizePrincImage"></td>
-                    <td><img src="../assets/img/ramoGerberas.jfif" title="Gerberas" class="sizePrincImage"></td>
-                    <td><img src="../assets/img/ramoGirasoles.jfif" title="Girasoles" class="sizePrincImage"></td>
-                    <td><img src="../assets/img/ramoTulipanes.jfif" title="Tulipanes" class="sizePrincImage"></td>
-                    <td><img src="../assets/img/ramoClaveles.jfif" title="Claveles" class="sizePrincImage"></td>
-                </tr>
-
-                <tr class="fontSizeTable">
-                    <td class="subtituloPrincipal">Rosas</td>
-                    <td class="subtituloPrincipal">Gerberas</td>
-                    <td class="subtituloPrincipal">Girasoles</td>
-                    <td class="subtituloPrincipal">Tulipanes</td>
-                    <td class="subtituloPrincipal">Claveles</td>
-                </tr>
-
-                <tr class="fontSizeTablePrecio">
-                    <td class="subtituloPrincipal">S/ 200.00</td>
-                    <td class="subtituloPrincipal">S/ 180.00</td>
-                    <td class="subtituloPrincipal">S/ 147.00</td>
-                    <td class="subtituloPrincipal">S/ 250.00</td>
-                    <td class="subtituloPrincipal">S/ 150.00</td>
-                </tr>
-
-                <tr>
-                    <td><input type="submit" name="submit" value="AGREGAR AL CARRITO" class="prinBtnCar"></td>
-                    <td><input type="submit" name="submit" value="AGREGAR AL CARRITO" class="prinBtnCar"></td>
-                    <td><input type="submit" name="submit" value="AGREGAR AL CARRITO" class="prinBtnCar"></td>
-                    <td><input type="submit" name="submit" value="AGREGAR AL CARRITO" class="prinBtnCar"></td>
-                    <td><input type="submit" name="submit" value="AGREGAR AL CARRITO" class="prinBtnCar"></td>
-                </tr>
-
-
-            </table>
-
-        </main>
-
-
-
-        <section class="redes">
-            <div class="redesContenedor">
-                <div><a href="./arreglos.html" id="arriba">Ir arriba</a></div>
-
-                <h3 class="redesComentario">Siguenos en :</h3>
-                <a href="https://www.facebook.com"><img class="redesSizeIcon"
-                     src="../assets/icons/facebookIcon.jfif"
-                        alt=""></a>
-                <a href="https://www.instagram.com"><img class="redesSizeIcon" src="../assets/icons/instagramIcon.jfif"
-                        alt="InstagramIcon"></a>
-                <a href="https://www.twitter.com"><img class="redesSizeIcon" src="../assets/icons/twiterIcon.png"
-                        alt="twiterIcon"></a>
-
-        </section>
-
-
-        <footer>
-            <div class="contenedorFooter">
-
-                <nav class="navFooter">
-                    <div class="footerGeneral">
-                        <ul>
-
-                            <h3>GENERAL</h3>
-
-                            <li>
-                                <a class="colorLink" href="./pages/perfil.html">Crear Cuenta</a>
-                            </li>
-
-                            <li>
-                                <a class="colorLink" href="./arreglos.html">Horarios de atención</a>
-                            </li>
-
-                            <li>
-                                <a class="colorLink" href="./arreglos">Formas de Pago</a>
-                            </li>
-
-                        </ul>
-                    </div>
-
-
-                    <div class="footerPoliticas">
-
-                        <ul>
-
-                            <h3>POLITICAS</h3>
-
-                            <li>
-                                <a class="colorLink" href="./arreglos.html">Políticas de Reembolso</a>
-                            </li>
-
-                            <li>
-                                <a class="colorLink" href="./arreglos.html">Términos y condiciones</a>
-                            </li>
-
-                            <li>
-                                <a class="colorLink" href="./arreglos.html">Políticas de entrega</a>
-                            </li>
-
-                        </ul>
-                    </div>
-                </nav>
-
-
-                <div class="footerSuscribete">
-                    <h3>SUSCRÍBETE Y RECIBE OFERTAS</h3>
-                    <p class="colorLink">"Déjanos tu email y recibe ofertas exclusivas" </p>
-                    <div>
-                        <form action="" method="post">
-
-                            <div>
-                                <input type="email" name="email" placeholder="Ingresa tu correo">
-                                <input type="hidden" name="action" value="0">
-                                <button name="enviarnews" type="submit">
-                                    <img src="../assets/icons/emailIcon.jfif" class="sizeIconEmailFooter" alt="">
-                                </button>
-
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-            </div>
-
-        </footer>
     </div>
+
+  </footer>
+
+  </div>
+
 </body>
 
 </html>

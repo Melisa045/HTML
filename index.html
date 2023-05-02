@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Majestic</title>
-  <link rel="shortcut icon" href="../PreEntrega2+Higa/assets/icons/icon.jfif" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/icons/icon.jfif" type="image/x-icon">
 
 
 
@@ -17,47 +17,52 @@
     crossorigin="anonymous"></script>
 
 
-  <link rel="stylesheet" href="./assets/css/estilos.css">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body class="contenedorPrincipal">
+<body>
 
-  <div>
+  <div class="contenedorPrincipal">
 
-    <div class="logoHeader">
-      <div class="imagenTitutlo">
-        <img src="./assets/icons/LogoFrase.jpg" alt="logo" class="sizeLogo">
-      </div>
+    <div class="perfil">
+      <div class="ancho">
 
-      <div class="perfil">
-        <a href="./pages/perfil.html" title="Inicio Sesion"><img src="./assets/icons/iconLogin.png"
-            class="iconoInicioSesion"> </a>
+        <div class="imagenTitutlo">
+          <img src="./assets/icons/LogoFrase.jpg" title="logo" class="sizeLogo">
+        </div>
 
-        <a href="./index.html" title="Carrito">
-          <img src="./assets/icons/iconCarrito.png" class="iconoInicioSesion"> </a>
+        <div class="registrarse">
+          <a href="./pages/perfil.html" title="Inicio Sesion">
+            <img src="./assets/icons/iconLogin.png" class="iconoInicioSesion">
+          </a>
 
-        <a href="./index.html" title="Buscar">
-          <img src="./assets/icons/iconBuscar.png" class="iconoInicioSesion"> </a>
+          <a href="./index.html" title="Carrito">
+            <img src="./assets/icons/iconCarrito.png" class="iconoInicioSesion">
+          </a>
+
+          <a href="./index.html" title="Buscar">
+            <img src="./assets/icons/iconBuscar.png" class="iconoInicioSesion">
+          </a>
+        </div>
 
       </div>
     </div>
 
-    <header class="headerProductos">
+    <header class="header">
       <nav>
         <ul class="menu">
-          <li><a href="./index.html" class="headerProductosSize">PRINCIPAL</a></li>
-          <li><a href="./pages/arreglos.html" class="headerProductosSize">ARREGLOS</a></li>
-          <li><a href="./pages/peluches.html" class="headerProductosSize">PELUCHES</a></li>
-          <li><a href="./pages/contactos.html" class="headerProductosSize">CONTACTOS</a></li>
-          <li><a href="./pages/perfil.html" class="headerProductosSize">REGISTRARSE</a></li>
+          <li><a href="./index.html">PRINCIPAL</a></li>
+          <li><a href="./pages/arreglos.html">ARREGLOS</a></li>
+          <li><a href="./pages/peluches.html">PELUCHES</a></li>
+          <li><a href="./pages/contactos.html">CONTACTOS</a></li>
+          <li><a href="./pages/registrarse.html">REGISTRARSE</a></li>
         </ul>
 
       </nav>
     </header>
 
-
     <!-- CAROUSEL -->
-    <div class="contenedorCarrousel">
+    <div class="contenedorCarousel">
 
       <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
@@ -73,23 +78,21 @@
         <div class="carousel-inner">
           <div class="carousel-item active"><!-- imagen flores -->
             <h2 class="tituloCarousel">ROSAS</h3>
-              <a href="./pages/arreglos.html"><img src="./assets/img/carouselFlowers03.jpg"
-                  class="d-block w-90 sizeCarousel m-auto sizeCarouselImagen" title="Flores"></a>
+              <a href="./pages/arreglos.html"><img src="./assets/img/carouselFlowers03.jpg" class="d-block w-90 m-auto"
+                  title="Flores"></a>
           </div>
           <div class="carousel-item carrouselInner"> <!-- imagen desayunos -->
             <h2 class="tituloCarousel">DESAYUNOS</h3>
-              <img src="./assets/img/carouselBreakfast.avif" class="d-block w-90 sizeCarousel m-auto sizeCarouselImagen"
-                title="Desayunos">
+              <img src="./assets/img/carouselBreakfast.avif" class="d-block w-90 m-auto" title="Desayunos">
           </div>
           <div class="carousel-item carrouselInner"><!-- imagen regalos -->
             <h2 class="tituloCarousel">OBSEQUIOS</h3>
-              <img src="./assets/img/carouselGift5.jfif" class="d-block w-90 sizeCarousel m-auto sizeCarouselImagen"
-                title="Regalos">
+              <img src="./assets/img/carouselGift5.jfif" class="d-block w-90 m-auto" title="Regalos">
           </div>
           <div class="carousel-item carrouselInner"><!-- imagen postres -->
             <h2 class="tituloCarousel">POSTRES</h3>
-              <img src="./assets/img/carouselDessert.avif" class="d-block w-90 sizeCarousel m-auto sizeCarouselImagen"
-                title="Postres">
+              <img src="./assets/img/carouselDessert.avif" class="d-block w-90
+               m-auto" title="Postres">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -103,17 +106,19 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-
-
     </div>
 
-    <div class="principalProductos">
+    <div class="productos">
       <h2 class="tituloPrincipal">LAS FLORES MAS DESTACADAS</h2>
       <!-- RAMO DE FLORES CUALQUIER ESTILO -->
       <div class="princContenedor">
 
         <div class="spaceImgPrincipal">
-          <img src="./assets/img/ramoTulipanes.jfif" alt="ramoRosas" title="Ramo Tulipanes" class="sizePrincImage">
+          <!-- <img src="./assets/img/ramoTulipanes.jfif" alt="ramoRosas" title="Ramo Tulipanes" class="sizePrincImage"> -->
+          <div class="tulipanes">
+            <!-- <img  alt="ramoClaveles" title="Ramo Claveles" class="sizePrincImage"> -->
+          </div>
+
           <div>
             <h3 class="subtituloPrincipal">Ramo Tulipanes</h3>
           </div>
@@ -127,7 +132,10 @@
         </div>
 
         <div class="spaceImgPrincipal">
-          <img src="./assets/img/ramoClaveles.jfif" alt="ramoClaveles" title="Ramo Claveles" class="sizePrincImage">
+         <!--  <img src="./assets/img/ramos/claveles.jfif" alt="ramoClaveles" title="Ramo Claveles" class="sizePrincImage"> -->
+          <div class="claveles">
+            
+          </div>
           <div>
             <h3 class="subtituloPrincipal">Ramo Claveles</h3>
           </div>
@@ -136,13 +144,15 @@
           </div>
           <form action="" method="post" class="prinBtnCarForm">
             <input type="submit" value="Agregar al Carrito" class="prinBtnCar">
-            <a href="./index.html"> </a>
           </form>
         </div>
 
 
         <div class="spaceImgPrincipal">
-          <img src="./assets/img/ramoGerberas.jfif" alt="ramoGerberas" title="Ramo Gerberas" class="sizePrincImage">
+       <!--    <img src="./assets/img/ramos/gerberas.jfif" alt="ramoGerberas" title="Ramo Gerberas" class="sizePrincImage"> -->
+          <div class="gerberas">
+            
+          </div>
           <div>
             <h3 class="subtituloPrincipal">Ramo Gerberas</h3>
           </div>
@@ -151,12 +161,15 @@
           </div>
           <form action="" method="post" class="prinBtnCarForm">
             <input type="submit" value="Agregar al Carrito" class="prinBtnCar">
-            <a href="./index.html"> </a>
+
           </form>
         </div>
 
         <div class="spaceImgPrincipal">
-          <img src="./assets/img/ramoGirasoles.jfif" alt="ramoGirasoles" title="Ramo Girasoles" class="sizePrincImage">
+  <!--         <img src="./assets/img/ramos/girasoles.jfif" alt="ramoGirasoles" title="Ramo Girasoles" class="sizePrincImage"> -->
+          <div class="girasoles">
+            
+          </div>
           <div>
             <h3 class="subtituloPrincipal">Ramo Girasoles</h3>
           </div>
@@ -165,14 +178,13 @@
           </div>
           <form action="" method="post" class="prinBtnCarForm">
             <input type="submit" value="Agregar al Carrito" class="prinBtnCar">
-            <a href="./index.html"> </a>
+
           </form>
         </div>
 
       </div>
 
       <!-- SECCION PELUCHES -->
-
       <h2 class="tituloPrincipal">LAS PELUCHES MAS SOLICITADOS</h2>
       <div class="princContenedor">
         <div class="spaceImgPrincipal">
@@ -185,7 +197,6 @@
           </div>
           <form action="" method="post" class="prinBtnCarForm">
             <input type="submit" value="Agregar al Carrito" class="prinBtnCar">
-            <a href="./index.html"> </a>
           </form>
         </div>
 
@@ -201,7 +212,6 @@
           </div>
           <form action="" method="post" class="prinBtnCarForm">
             <input type="submit" value="Agregar al Carrito" class="prinBtnCar">
-            <a href="./index.html"> </a>
           </form>
         </div>
 
@@ -215,7 +225,6 @@
           </div>
           <form action="" method="post" class="prinBtnCarForm">
             <input type="submit" value="Agregar al Carrito" class="prinBtnCar">
-            <a href="./index.html"> </a>
           </form>
         </div>
 
@@ -230,34 +239,36 @@
           </div>
           <form action="" method="post" class="prinBtnCarForm">
             <input type="submit" value="Agregar al Carrito" class="prinBtnCar">
-            <a href="./index.html"> </a>
           </form>
         </div>
-
 
       </div>
 
     </div>
 
-
-    <section class="redes">
+    <div class="redes">
       <div class="redesContenedor">
-        <div><a href="./index.html" id="arriba">Ir arriba</a></div>
 
-        <h3 class="redesComentario">Siguenos en :</h3>
-        <a href="https://www.facebook.com"><img class="redesSizeIcon" src="./assets/icons/facebookIcon.jfif" alt=""></a>
-        <a href="https://www.instagram.com"><img class="redesSizeIcon" src="./assets/icons/instagramIcon.jfif"
-            alt="InstagramIcon"></a>
-        <a href="https://www.twitter.com"><img class="redesSizeIcon" src="./assets/icons/twiterIcon.png"
-            alt="twiterIcon"></a>
+        <div class="arriba">
+          <a href="./index.html" id="arriba">Ir arriba</a>
+        </div>
 
-    </section>
+        <div class="redesSociales">
+          <h3 class="redesComentario">Siguenos en :</h3>
+          <a href="https://www.facebook.com">
+            <img class="redesSizeIcon" src="./assets/icons/facebookIcon.jfif" alt="facebookIcon"></a>
+          <a href="https://www.instagram.com">
+            <img class="redesSizeIcon" src="./assets/icons/instagramIcon.jfif" alt="InstagramIcon"></a>
+          <a href="https://www.twitter.com">
+            <img class="redesSizeIcon" src="./assets/icons/twiterIcon.png" alt="twiterIcon"></a>
+        </div>
+      </div>
+    </div>
 
-
-    <footer>
+    <footer class="footer">
       <div class="contenedorFooter">
 
-        <nav class="navFooter">
+        <nav>
           <div class="footerGeneral">
             <ul>
 
@@ -277,30 +288,28 @@
 
             </ul>
           </div>
-
-
-          <div class="footerPoliticas">
-
-            <ul>
-
-              <h3>POLITICAS</h3>
-
-              <li>
-                <a class="colorLink" href="./index.html">Políticas de Reembolso</a>
-              </li>
-
-              <li>
-                <a class="colorLink" href="./index.html">Términos y condiciones</a>
-              </li>
-
-              <li>
-                <a class="colorLink" href="./index.html">Políticas de entrega</a>
-              </li>
-
-            </ul>
-          </div>
         </nav>
 
+        <div class="footerPoliticas">
+
+          <ul>
+
+            <h3>POLITICAS</h3>
+
+            <li>
+              <a class="colorLink" href="./index.html">Políticas de Reembolso</a>
+            </li>
+
+            <li>
+              <a class="colorLink" href="./index.html">Términos y condiciones</a>
+            </li>
+
+            <li>
+              <a class="colorLink" href="./index.html">Políticas de entrega</a>
+            </li>
+
+          </ul>
+        </div>
 
         <div class="footerSuscribete">
           <h3>SUSCRÍBETE Y RECIBE OFERTAS</h3>
@@ -323,7 +332,6 @@
       </div>
 
     </footer>
-
   </div>
 
 </body>

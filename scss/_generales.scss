@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+
+    font-size: 62.5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    body {
+        width: 100%;
+
+        .contenedorPrincipal {
+            display: grid;
+            grid-template-columns: repeat(4, 0.2fr);
+            grid-template-rows: repeat(6, 0.1fr);
+            grid-template-areas:
+                "perfil perfil perfil perfil "
+                "header header header header"
+                "carousel carousel carousel carousel"
+                "productos productos productos productos"
+                "redes redes redes redes"
+                "pie pie pie pie"
+            ;
+            justify-content: center;
+            background-color: white;
+
+        }
+    }
+}
+
+@mixin flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+@mixin fuente{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

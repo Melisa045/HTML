@@ -1,0 +1,399 @@
+@charset "UTF-8";
+/*VA AL INICIO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+html body {
+  width: 100%;
+}
+html body .contenedorPrincipal {
+  display: grid;
+  grid-template-columns: repeat(4, 0.2fr);
+  grid-template-rows: repeat(6, 0.1fr);
+  grid-template-areas: "perfil perfil perfil perfil " "header header header header" "carousel carousel carousel carousel" "productos productos productos productos" "redes redes redes redes" "pie pie pie pie";
+  justify-content: center;
+  background-color: white;
+}
+
+.perfil {
+  grid-area: perfil;
+  background-color: white;
+}
+.perfil .ancho {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.perfil .ancho .imagenTitutlo .sizeLogo {
+  width: 170px;
+  height: 90px;
+}
+.perfil .ancho .registrarse .iconoInicioSesion {
+  width: 28px;
+  height: 28px;
+}
+.perfil .ancho .registrarse a {
+  text-decoration: none;
+}
+
+.header {
+  grid-area: header;
+}
+.header .menu {
+  background-color: rgb(214, 98, 170);
+  font-size: 22px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.header .menu li a {
+  text-decoration: none;
+  color: gold;
+}
+.header .menu li a:hover {
+  color: white;
+}
+
+/* focus para el texto */
+input:focus {
+  height: 30px;
+  background-color: white;
+}
+
+input[type=checkbox]:checked {
+  box-shadow: 0 0 0 3px white;
+}
+
+.contenedorCarousel {
+  grid-area: carousel;
+  width: 100%;
+}
+.contenedorCarousel .tituloCarousel {
+  text-align: center;
+  color: brown;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(108%);
+}
+
+.productos {
+  grid-area: productos;
+}
+.productos .tituloPrincipal {
+  color: palevioletred;
+  font-weight: bold;
+  size: 20px;
+  padding: 1% 1%;
+}
+.productos .princContenedor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.productos .princContenedor .spaceImgPrincipal {
+  padding: 0 1px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.productos .princContenedor .spaceImgPrincipal .subtituloPrincipal {
+  text-align: center;
+  color: yellowgreen;
+  font-weight: bold;
+  font-size: 20px;
+}
+.productos .princContenedor .spaceImgPrincipal .prinBtnCarForm {
+  text-align: center;
+}
+.productos .princContenedor .spaceImgPrincipal .prinBtnCarForm .prinBtnCar {
+  font-size: 12px;
+  cursor: pointer;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: yellowgreen;
+}
+
+/* EACH */
+.tulipanes {
+  background-image: url("../assets/img/ramos/tulipanes.jfif");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0px 0px;
+  margin: 1px 1px;
+  width: 300px;
+  height: 280px;
+}
+
+.claveles {
+  background-image: url("../assets/img/ramos/claveles.jfif");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0px 0px;
+  margin: 1px 1px;
+  width: 300px;
+  height: 280px;
+}
+
+.gerberas {
+  background-image: url("../assets/img/ramos/gerberas.jfif");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0px 0px;
+  margin: 1px 1px;
+  width: 300px;
+  height: 280px;
+}
+
+.girasoles {
+  background-image: url("../assets/img/ramos/girasoles.jfif");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0px 0px;
+  margin: 1px 1px;
+  width: 300px;
+  height: 280px;
+}
+
+.redes {
+  grid-area: redes;
+  background-color: rgb(247, 200, 207);
+  width: 100%;
+}
+.redes .redesContenedor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.redes .redesContenedor .arriba {
+  font-size: 20px;
+  list-style: none;
+  text-decoration: none;
+  color: brown;
+}
+.redes .redesContenedor .redesSociales .redesComentario {
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.redes .redesContenedor .redesSociales .redesSizeIcon {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border-style: groove;
+}
+
+footer {
+  grid-area: pie;
+  background-color: rgb(230, 237, 245);
+  background-image: url(../assets/img/fondoFooter.jfif);
+  width: 100%;
+}
+footer .contenedorFooter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  color: brown;
+  font-size: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+footer .contenedorFooter .footerGeneral li {
+  list-style: none;
+}
+footer .contenedorFooter .footerGeneral li a {
+  text-decoration: none;
+}
+footer .contenedorFooter .footerGeneral .colorLink {
+  color: black;
+}
+footer .contenedorFooter .footerGeneral .colorLink:hover {
+  color: blueviolet;
+  font-weight: bold;
+}
+footer .contenedorFooter .footerPoliticas li {
+  list-style: none;
+}
+footer .contenedorFooter .footerPoliticas li a {
+  text-decoration: none;
+}
+footer .contenedorFooter .footerPoliticas .colorLink {
+  color: black;
+}
+footer .contenedorFooter .footerPoliticas .colorLink:hover {
+  color: blueviolet;
+  font-weight: bold;
+}
+footer .contenedorFooter .footerSuscribete .colorLink {
+  color: black;
+}
+footer .contenedorFooter .footerSuscribete .sizeIconEmailFooter {
+  width: 30px;
+  margin: 3px;
+}
+
+/* TAMAÑO TABLET 768PX */
+@media screen and (max-width: 768px) {
+  .contenedorPrincipal {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "header principal" "footer footer";
+  }
+  .headerProductos {
+    grid-area: header;
+    width: 50%;
+  }
+  .principalProductos {
+    grid-area: principal;
+    width: 50%;
+  }
+  .sizePrincImage {
+    width: 150px;
+    height: 75px;
+  }
+  .spaceImgPrincipal {
+    padding: 0 10px;
+    margin: 2px 2px;
+  }
+  .subtituloPrincipal {
+    padding: 0 5px;
+    font-size: 15px;
+  }
+  .prinBtnCarForm {
+    border-radius: 0 0 5px 5px;
+    padding: 0 0.5px;
+  }
+  .headerProductosSize {
+    font-size: 15px;
+  }
+  .menu li {
+    font-size: 15px;
+  }
+  .contenedorCarrousel {
+    visibility: hidden;
+    content-visibility: hidden;
+  }
+}
+/* TAMAÑO TABLET 500PX O MENOS */
+@media screen and (max-width: 500px) {
+  .contenedorPrincipal {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 0.3fr;
+    grid-template-areas: "header" "principal" "footer";
+  }
+  .headerProductos {
+    grid-area: header;
+  }
+  .principalProductos {
+    grid-area: principal;
+  }
+  .footer {
+    grid-area: footer;
+  }
+  .sizePrincImage {
+    width: 130px;
+    height: 75px;
+  }
+  .spaceImgPrincipal {
+    padding: 0 1px;
+    margin: 1px 1px;
+  }
+  .subtituloPrincipal {
+    padding: 0 3px;
+    font-size: 10px;
+  }
+  .prinBtnCarForm {
+    border-radius: 0 0 5px 5px;
+    padding: 0 0.5px;
+  }
+  .headerProductosSize {
+    font-size: 10px;
+  }
+  .menu li {
+    font-size: 10px;
+  }
+  .contenedorCarrousel {
+    visibility: hidden;
+    content-visibility: hidden;
+  }
+}
+.formPerfil {
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(179, 82, 170);
+}
+
+.princContenedor {
+  display: flex;
+  padding: 10px 40px;
+}
+
+.spaceImgPrinArre {
+  padding: 0 10px;
+  margin: 5px 5px;
+}
+
+.contRegistrar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 17px;
+}
+.contRegistrar .formPerfilSelected {
+  font-size: 17px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(99, 46, 55);
+  font-weight: bold;
+}
+.contRegistrar .formPerfilBtn {
+  font-size: 22px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(84, 82, 179);
+  background-color: rgb(53, 230, 230);
+}
+
+.fontContactos {
+  font-size: 17px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(99, 46, 55);
+  font-weight: bold;
+}
+.fontContactos .formPerfilBtnContactos {
+  font-size: 22px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(84, 82, 179);
+  background-color: rgb(53, 230, 230);
+}
+
+/*# sourceMappingURL=styles.css.map */

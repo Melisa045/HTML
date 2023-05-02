@@ -1,0 +1,17 @@
+.contenedorCarousel {
+    grid-area: carousel;
+    width: 100%;
+
+    .tituloCarousel {
+        text-align: center;
+        color: brown;
+
+
+    }
+
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(108%);
+}

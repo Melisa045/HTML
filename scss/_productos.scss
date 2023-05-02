@@ -1,0 +1,64 @@
+.productos {
+    grid-area: productos;
+
+    .tituloPrincipal {
+        color: palevioletred;
+        font-weight: bold;
+        size: 20px;
+        padding: 1% 1%;
+    }
+
+    .princContenedor {
+
+        @include flex;
+        
+        .spaceImgPrincipal {
+            padding: 0 1px;
+            @include fuente;
+            
+            .subtituloPrincipal {
+                text-align: center;
+                color: yellowgreen;
+                font-weight: bold;
+                font-size: 20px;
+
+            }
+
+            .prinBtnCarForm {
+                text-align: center;
+
+                .prinBtnCar {
+                    font-size: 12px;
+                    cursor: pointer;
+
+                    @include fuente;
+
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: yellowgreen;
+                }
+            }
+
+        }
+
+    }
+}
+
+
+/* EACH */
+@each $ramo in tulipanes,
+claveles,
+gerberas,
+girasoles {
+    .#{$ramo} {
+        background-image: url("../assets/img/ramos/#{$ramo}.jfif");
+        background-position: center;
+        background-repeat: no-repeat;
+
+        margin: 0px 0px;
+        margin: 1px 1px;
+        width: 300px;
+        height: 280px;
+    }
+
+}

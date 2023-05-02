@@ -1,0 +1,23 @@
+.contRegistrar {
+
+    @include flex;
+
+    font-size: 17px;
+
+
+    .formPerfilSelected {
+        font-size: 17px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: rgb(99, 46, 55);
+        font-weight: bold;
+
+    }
+
+    .formPerfilBtn {
+        font-size: 22px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: rgb(84, 82, 179);
+        background-color: rgb(53, 230, 230);
+    }
+
+}

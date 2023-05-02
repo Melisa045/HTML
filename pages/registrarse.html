@@ -60,70 +60,74 @@
             </nav>
         </header>
 
-        <div class="productos">
 
-            <!-- SECCION PELUCHES -->
-            <h2 class="tituloPrincipal">LAS PELUCHES MAS SOLICITADOS</h2>
-            <div class="princContenedor">
-                <div class="spaceImgPrincipal">
-                    <img src="../assets/img/pelucheElla.jfif" alt="pelucheElla" title="Peluche para Ella"
-                        class="sizePrincImage">
-                    <div>
-                        <h3 class="subtituloPrincipal">Peluche ELLA</h3>
+        <!-- FORMULARIO -->
+        <div class="productos ">
+            <div class="contRegistrar">
+               
+                <form class="row g-3">
+                    <h1 class="tituloPrincipal text-center">REGISTRAR NUEVO USUARIO</h1>
+                    <h2>DATOS DE ACCESO</h2>
+                    
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
                     </div>
-                    <div>
-                        <h3 class="subtituloPrincipal"> S/120.00</h3>
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="inputPassword4">
                     </div>
-                    <form action="" method="post" class="prinBtnCarForm">
-                        <input type="submit" value="Agregar al Carrito" class="prinBtnCar">
-                    </form>
-                </div>
 
-                <div class="spaceImgPrincipal">
-                    <img src="../assets/img/pelucheEl.jfif" alt="pelucheEl" title="Peluche para EL"
-                        class="sizePrincImage">
-                    <div>
-                        <h3 class="subtituloPrincipal">Peluche EL</h3>
-                    </div>
-                    <div>
-                        <h3 class="subtituloPrincipal"> S/110.00</h3>
-                    </div>
-                    <form action="" method="post" class="prinBtnCarForm">
-                        <input type="submit" value="Agregar al Carrito" class="prinBtnCar">
-                    </form>
-                </div>
 
-                <div class="spaceImgPrincipal">
-                    <img src="../assets/img/peluchenina.jfif" alt="pelucheNino" title="Peluche Niño"
-                        class="sizePrincImage">
-                    <div>
-                        <h3 class="subtituloPrincipal">Peluche Niño</h3>
+                    <div class="col-12">
+                        <h2>DATOS PERSONALES</h2>
+                        <label for="inputAddress" class="form-label ">Nombre</label>
+                        <input type="text" class="form-control" id="inputNombre" placeholder="">
                     </div>
-                    <div>
-                        <h3 class="subtituloPrincipal"> S/80.00</h3>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="inputApellido" placeholder="">
                     </div>
-                    <form action="" method="post" class="prinBtnCarForm">
-                        <input type="submit" value="Agregar al Carrito" class="prinBtnCar">
-                    </form>
-                </div>
+                    <div class="col-12">
+                        <label for="inputAddress2" class="form-label">Teléfono</label>
+                        <input type="text" class="form-control" id="inputTelefono" placeholder="">
+                    </div>
 
-                <div class="spaceImgPrincipal">
-                    <img src="../assets/img/peluchenino.jfif" alt="pelucheNiña" title="Peluche Niña"
-                        class="sizePrincImage">
-                    <div>
-                        <h3 class="subtituloPrincipal">Peluche Niña</h3>
+                    <div class="col-4">
+                        <label for="inputState" class="form-label">Ciudad</label>
+                        <select id="inputState" class="form-select formPerfilSelected">
+                            <option selected>Seccionar</option>
+                            <option>Arequipa</option>
+                            <option>Callao</option>
+                            <option>Lima</option>
+                        </select>
                     </div>
-                    <div>
-                        <h3 class="subtituloPrincipal"> S/150.00</h3>
-                    </div>
-                    <form action="" method="post" class="prinBtnCarForm">
-                        <input type="submit" value="Agregar al Carrito" class="prinBtnCar">
-                    </form>
-                </div>
 
+                    <div class="col-12">
+                        <label for="inputAddress2" class="form-label">Dirección</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="">
+                    </div>
+
+                    <div class="col-2">
+                        <label for="inputZip" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label fontInput" for="gridCheck">
+                                He leído y Acepto los términos y Condiciones
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary formPerfilBtn">
+                            Registrarse</button>
+                    </div>
+                </form>
             </div>
-
         </div>
+
 
         <div class="redes">
             <div class="redesContenedor">

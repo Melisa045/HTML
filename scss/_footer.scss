@@ -1,0 +1,64 @@
+footer {
+    grid-area: pie;
+    background-color: rgb(230, 237, 245);
+    background-image: url(../assets/img/fondoFooter.jfif);
+    width: 100%;
+    .contenedorFooter {
+        
+     @include flex;
+
+        color: brown;
+        font-size: 15px;
+        @include fuente;
+
+        .footerGeneral {
+            li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+
+            .colorLink {
+                color: black;
+
+                &:hover {
+                    color: blueviolet;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .footerPoliticas {
+            li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+
+            .colorLink {
+                color: black;
+
+                &:hover {
+                    color: blueviolet;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .footerSuscribete {
+            .colorLink {
+                color: black;
+            }
+
+            .sizeIconEmailFooter {
+                width: 30px;
+                margin: 3px;
+            }
+        }
+
+    }
+}

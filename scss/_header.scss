@@ -1,0 +1,39 @@
+.header {
+    grid-area: header;
+
+    .menu {
+        background-color: $bkgdHeaderCont;
+        font-size: 22px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        @include flex;
+
+
+        list-style: none;
+
+        li {
+            a {
+                text-decoration: none;
+                color: gold;
+
+                &:hover {
+                    color: $bkgdHeaderLetra;
+
+                }
+            }
+        }
+
+    }
+
+}
+
+/* focus para el texto */
+input:focus {
+    height: 30px;
+    background-color: $bkgdHeaderLetra;
+}
+
+input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px $bkgdHeaderLetra;
+
+}
