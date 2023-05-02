@@ -116,6 +116,9 @@ input[type=checkbox]:checked {
 .productos .princContenedor .spaceImgPrincipal {
   padding: 0 1px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  /*            @include sizeImagen; */
+  width: 300px;
+  height: 280px;
 }
 .productos .princContenedor .spaceImgPrincipal .subtituloPrincipal {
   text-align: center;
@@ -140,40 +143,24 @@ input[type=checkbox]:checked {
   background-image: url("../assets/img/ramos/tulipanes.jfif");
   background-position: center;
   background-repeat: no-repeat;
-  margin: 0px 0px;
-  margin: 1px 1px;
-  width: 300px;
-  height: 280px;
 }
 
 .claveles {
   background-image: url("../assets/img/ramos/claveles.jfif");
   background-position: center;
   background-repeat: no-repeat;
-  margin: 0px 0px;
-  margin: 1px 1px;
-  width: 300px;
-  height: 280px;
 }
 
 .gerberas {
   background-image: url("../assets/img/ramos/gerberas.jfif");
   background-position: center;
   background-repeat: no-repeat;
-  margin: 0px 0px;
-  margin: 1px 1px;
-  width: 300px;
-  height: 280px;
 }
 
 .girasoles {
   background-image: url("../assets/img/ramos/girasoles.jfif");
   background-position: center;
   background-repeat: no-repeat;
-  margin: 0px 0px;
-  margin: 1px 1px;
-  width: 300px;
-  height: 280px;
 }
 
 .redes {

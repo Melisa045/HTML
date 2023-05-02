@@ -11,11 +11,14 @@
     .princContenedor {
 
         @include flex;
-        
+
         .spaceImgPrincipal {
             padding: 0 1px;
             @include fuente;
-            
+            /*            @include sizeImagen; */
+            width: 300px;
+            height: 280px;
+
             .subtituloPrincipal {
                 text-align: center;
                 color: yellowgreen;
@@ -54,11 +57,12 @@ girasoles {
         background-image: url("../assets/img/ramos/#{$ramo}.jfif");
         background-position: center;
         background-repeat: no-repeat;
-
-        margin: 0px 0px;
-        margin: 1px 1px;
-        width: 300px;
-        height: 280px;
     }
 
+}
+
+
+@mixin sizeImagen {
+    width: 300px;
+    height: 280px;
 }
