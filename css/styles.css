@@ -22,6 +22,31 @@ html body .contenedorPrincipal {
   background-color: white;
 }
 
+/* EACH */
+.tulipanes {
+  background-image: url("../assets/img/ramos/tulipanes.jfif");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.claveles {
+  background-image: url("../assets/img/ramos/claveles.jfif");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gerberas {
+  background-image: url("../assets/img/ramos/gerberas.jfif");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.girasoles {
+  background-image: url("../assets/img/ramos/girasoles.jfif");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .perfil {
   grid-area: perfil;
   background-color: white;
@@ -116,7 +141,6 @@ input[type=checkbox]:checked {
 .productos .princContenedor .spaceImgPrincipal {
   padding: 0 1px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  /*            @include sizeImagen; */
   width: 300px;
   height: 280px;
 }
@@ -136,31 +160,6 @@ input[type=checkbox]:checked {
   text-align: center;
   text-transform: uppercase;
   color: yellowgreen;
-}
-
-/* EACH */
-.tulipanes {
-  background-image: url("../assets/img/ramos/tulipanes.jfif");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.claveles {
-  background-image: url("../assets/img/ramos/claveles.jfif");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.gerberas {
-  background-image: url("../assets/img/ramos/gerberas.jfif");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.girasoles {
-  background-image: url("../assets/img/ramos/girasoles.jfif");
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .redes {

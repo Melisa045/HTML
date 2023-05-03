@@ -43,3 +43,22 @@ html {
 @mixin fuente{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+/* EACH */
+@each $ramo in tulipanes,
+claveles,
+gerberas,
+girasoles {
+    .#{$ramo} {
+        background-image: url("../assets/img/ramos/#{$ramo}.jfif");
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+
+}
+
+@mixin sizeImagen {
+    width: 300px;
+    height: 280px;
+}
