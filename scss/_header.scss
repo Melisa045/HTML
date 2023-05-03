@@ -2,7 +2,10 @@
     grid-area: header;
 
     .menu {
-        background-color: $bkgdHeaderCont;
+        /*     background-color: $bkgdHeaderCont; */
+        /*      background: linear-gradient(to bottom, rgb(240, 39, 163), rgb(248, 205, 231)); */
+        background: linear-gradient(0deg, rgba(195, 34, 51, 1) 0%, rgba(247, 64, 228, 0.673) 100%);
+
         font-size: 22px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
 
