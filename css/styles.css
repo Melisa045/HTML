@@ -22,43 +22,6 @@ html body .contenedorPrincipal {
   background-color: white;
 }
 
-/* EACH */
-.tulipanes {
-  background-image: url("../assets/img/ramos/tulipanes.jfif");
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 300px;
-  height: 280px;
-}
-
-.claveles {
-  background-image: url("../assets/img/ramos/claveles.jfif");
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 300px;
-  height: 280px;
-}
-
-.gerberas {
-  background-image: url("../assets/img/ramos/gerberas.jfif");
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 300px;
-  height: 280px;
-}
-
-.girasoles {
-  background-image: url("../assets/img/ramos/girasoles.jfif");
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 300px;
-  height: 280px;
-}
-
-/* @mixin sizeImagen {
-    width: 300px;
-    height: 280px;
-} */
 .perfil {
   grid-area: perfil;
   background-color: white;
@@ -161,6 +124,14 @@ input[type=checkbox]:checked {
   color: yellowgreen;
   font-weight: bold;
   font-size: 20px;
+}
+.productos .princContenedor .spaceImgPrincipal .sizePrincImage {
+  width: 300px;
+  height: 280px;
+  transition: all 1s;
+}
+.productos .princContenedor .spaceImgPrincipal .sizePrincImage:hover {
+  transform: scale(1.1, 1.1);
 }
 .productos .princContenedor .spaceImgPrincipal .prinBtnCarForm {
   text-align: center;
