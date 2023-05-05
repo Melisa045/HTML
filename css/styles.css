@@ -85,7 +85,13 @@ input[type=checkbox]:checked {
 
 .contenedorCarousel {
   grid-area: carousel;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
   width: 100%;
+  padding: 0;
+  margin: 0;
 }
 .contenedorCarousel .tituloCarousel {
   text-align: center;
@@ -204,7 +210,6 @@ footer {
   grid-area: pie;
   background-color: rgb(230, 237, 245);
   background-image: url(../assets/img/fondoFooter.jfif);
-  width: 100%;
 }
 footer .contenedorFooter {
   display: flex;
@@ -306,47 +311,59 @@ footer .contenedorFooter .sizeIconEmailFooter {
     content-visibility: hidden;
   }
 }
-/* TAMAÑO TABLET 500PX O MENOS */
+/* TAMAÑO MOBILE 500PX O MENOS */
 @media screen and (max-width: 500px) {
-  .contenedorPrincipal {
+  body {
+    /*         flex-direction: wrap; */
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+  }
+  body .contenedorPrincipal {
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 1fr 0.3fr;
     grid-template-areas: "header" "principal" "footer";
+    /*     flex-direction: wrap; */
+    /*  flex-wrap: wrap;
+                align-items: center;
+                align-content: center;
+    */
   }
-  .headerProductos {
+  body .contenedorPrincipal .contenedorCarrousel {
+    visibility: hidden;
+    content-visibility: hidden;
+  }
+  body .contenedorPrincipal .header {
     grid-area: header;
+    flex-direction: wrap;
+    align-items: center;
+    align-content: center;
   }
-  .principalProductos {
-    grid-area: principal;
+  body .contenedorPrincipal .header .menu li a {
+    font-size: 10px;
   }
-  .footer {
-    grid-area: footer;
+  body .contenedorPrincipal .productos {
+    grid-area: productos;
+    flex-direction: column;
   }
-  .sizePrincImage {
-    width: 130px;
-    height: 75px;
-  }
-  .spaceImgPrincipal {
+  body .contenedorPrincipal .productos .spaceImgPrincipal {
     padding: 0 1px;
     margin: 1px 1px;
   }
-  .subtituloPrincipal {
+  body .contenedorPrincipal .productos .spaceImgPrincipal .sizePrincImage {
+    width: 130px;
+    height: 75px;
+  }
+  body .contenedorPrincipal .productos .spaceImgPrincipal .subtituloPrincipal {
     padding: 0 3px;
     font-size: 10px;
   }
-  .prinBtnCarForm {
+  body .contenedorPrincipal .productos .spaceImgPrincipal .prinBtnCarForm {
     border-radius: 0 0 5px 5px;
     padding: 0 0.5px;
   }
-  .headerProductosSize {
-    font-size: 10px;
-  }
-  .menu li {
-    font-size: 10px;
-  }
-  .contenedorCarrousel {
-    visibility: hidden;
-    content-visibility: hidden;
+  body .contenedorPrincipal .footer {
+    grid-area: footer;
   }
 }
 .formPerfil {

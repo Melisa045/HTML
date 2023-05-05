@@ -1,123 +1,137 @@
  /* TAMAÑO TABLET 768PX */
  @media screen and (max-width:768px) {
 
-    .contenedorPrincipal {
+     .contenedorPrincipal {
 
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas:
-            "header principal"
-            "footer footer"
-        ;
-    }
+         grid-template-columns: repeat(2, 1fr);
+         grid-template-rows: repeat(2, 1fr);
+         grid-template-areas:
+             "header principal"
+             "footer footer"
+         ;
+     }
 
-    .headerProductos {
-        grid-area: header;
-        width: 50%;
-    }
+     .headerProductos {
+         grid-area: header;
+         width: 50%;
+     }
 
-    .principalProductos {
-        grid-area: principal;
-        width: 50%;
-    }
+     .principalProductos {
+         grid-area: principal;
+         width: 50%;
+     }
 
 
 
-    .sizePrincImage {
-        width: 150px;
-        height: 75px;
-    }
+     .sizePrincImage {
+         width: 150px;
+         height: 75px;
+     }
 
-    .spaceImgPrincipal {
-        padding: 0 10px;
-        margin: 2px 2px;
-    }
+     .spaceImgPrincipal {
+         padding: 0 10px;
+         margin: 2px 2px;
+     }
 
-    .subtituloPrincipal {
-        padding: 0 5px;
-        font-size: 15px;
+     .subtituloPrincipal {
+         padding: 0 5px;
+         font-size: 15px;
 
-    }
+     }
 
-    .prinBtnCarForm {
-        border-radius: 0 0 5px 5px;
-        padding: 0 0.5px;
-    }
+     .prinBtnCarForm {
+         border-radius: 0 0 5px 5px;
+         padding: 0 0.5px;
+     }
 
-    .headerProductosSize {
-        font-size: 15px;
-    }
+     .headerProductosSize {
+         font-size: 15px;
+     }
 
-    .menu li {
-        font-size: 15px;
-    }
+     .menu li {
+         font-size: 15px;
+     }
 
-    .contenedorCarrousel {
-        visibility: hidden;
-        content-visibility: hidden;
-    }
+     .contenedorCarrousel {
+         visibility: hidden;
+         content-visibility: hidden;
+     }
 
-}
+ }
 
-/* TAMAÑO TABLET 500PX O MENOS */
-@media screen and (max-width:500px) {
+ /* TAMAÑO MOBILE 500PX O MENOS */
+ @media screen and (max-width:500px) {
+     body {
+/*         flex-direction: wrap; */
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
 
-    .contenedorPrincipal {
+         .contenedorPrincipal {
 
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 1fr 0.3fr;
-        grid-template-areas:
-            "header"
-            "principal"
-            "footer"
-        ;
-    }
+             grid-template-columns: 1fr;
+             grid-template-rows: 0.2fr 1fr 0.3fr;
+             grid-template-areas:
+                 "header"
+                 "principal"
+                 "footer"
+             ;
+         /*     flex-direction: wrap; */
+            /*  flex-wrap: wrap;
+             align-items: center;
+             align-content: center;
+ */
 
-    .headerProductos {
-        grid-area: header;
-    }
+             .contenedorCarrousel {
+                 visibility: hidden;
+                 content-visibility: hidden;
+             }
 
-    .principalProductos {
-        grid-area: principal;
-    }
+             .header {
+                 grid-area: header;
+                 flex-direction: wrap;
+                 align-items: center;
+                 align-content: center;
 
-    .footer {
+                 .menu li a {
+                     font-size: 10px;
+                 }
 
-        grid-area: footer;
-    }
+             }
 
-    .sizePrincImage {
-        width: 130px;
-        height: 75px;
-    }
+             .productos {
+                 grid-area: productos;
+                 flex-direction: column;
 
-    .spaceImgPrincipal {
-        padding: 0 1px;
-        margin: 1px 1px;
-    }
 
-    .subtituloPrincipal {
-        padding: 0 3px;
-        font-size: 10px;
+                 .spaceImgPrincipal {
+                     padding: 0 1px;
+                     margin: 1px 1px;
 
-    }
+                     .sizePrincImage {
+                         width: 130px;
+                         height: 75px;
+                     }
 
-    .prinBtnCarForm {
-        border-radius: 0 0 5px 5px;
-        padding: 0 0.5px;
-    }
+                     .subtituloPrincipal {
+                         padding: 0 3px;
+                         font-size: 10px;
 
-    .headerProductosSize {
-        font-size: 10px;
-    }
+                     }
 
-    .menu li {
-        font-size: 10px;
-    }
+                     .prinBtnCarForm {
+                         border-radius: 0 0 5px 5px;
+                         padding: 0 0.5px;
+                     }
+                 }
+             }
 
-    .contenedorCarrousel {
-        visibility: hidden;
-        content-visibility: hidden;
-    }
+             .footer {
 
-} 
+                 grid-area: footer;
+             }
+         }
+
+     }
+
+ }
