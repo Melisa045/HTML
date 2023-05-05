@@ -31,7 +31,7 @@ html {
     }
 }
 
-@mixin flex{
+@mixin flex {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -40,7 +40,32 @@ html {
     padding: 0;
     margin: 0;
 }
-@mixin fuente{
+
+@mixin contRedesFooter {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: brown;
+    font-size: 15px;
 }
 
+@mixin fuente {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+   }
+
+@mixin noStyleDcoration {
+    li {
+        list-style: none;
+
+        a {
+            text-decoration: none;
+        }
+    }
+    .colorLink {
+    color: black;
+
+    &:hover {
+        color: blueviolet;
+        font-weight: bold;
+    }
+}
+}

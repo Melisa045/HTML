@@ -1,14 +1,20 @@
 .redes {
     grid-area: redes;
     background-color: rgb(247, 200, 207);
+    background-image: url(../assets/img/fondoRedes.jfif);
     width: 100%;
 
-    .redesContenedor {
+    .contenedorRedes {
 
         @include flex;
 
-        .arriba {
-            font-size: 20px;
+        .redesContGeneral {
+            @include noStyleDcoration;
+            @include contRedesFooter;
+        }
+
+        .arriba a {
+            @include fuente;
             list-style: none;
             text-decoration: none;
             color: brown;
@@ -16,8 +22,8 @@
 
         .redesSociales {
             .redesComentario {
-                font-size: 20px;
                 @include fuente;
+
             }
 
             .redesSizeIcon {

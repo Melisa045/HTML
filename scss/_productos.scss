@@ -1,33 +1,26 @@
 .productos {
     grid-area: productos;
-
-    .tituloPrincipal {
-        color: palevioletred;
-        font-weight: bold;
-        size: 20px;
-        padding: 1% 1%;
-    }
-
-    .princContenedor {
+    
+      .princContenedor {
 
         @include flex;
 
         .spaceImgPrincipal {
             padding: 0 1px;
-            @include fuente;
+            @include contRedesFooter;
 
 
             .subtituloPrincipal {
                 text-align: center;
                 color: yellowgreen;
                 font-weight: bold;
-                font-size: 20px;
+                @include fuente;
 
             }
 
             .sizePrincImage {
-                width: 300px;
-                height: 280px;
+                width: 280px;
+                height: 260px;
                 transition: all 1s;
 
                 &:hover {
@@ -40,7 +33,7 @@
                 text-align: center;
 
                 .prinBtnCar {
-                    font-size: 12px;
+
                     cursor: pointer;
 
                     @include fuente;
@@ -53,5 +46,12 @@
 
         }
 
+    }
+
+    .tituloPrincipal {
+        color: palevioletred;
+        font-weight: bold;
+        @include fuente;
+        padding: 1% 1%;
     }
 }

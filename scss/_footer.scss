@@ -3,62 +3,33 @@ footer {
     background-color: rgb(230, 237, 245);
     background-image: url(../assets/img/fondoFooter.jfif);
     width: 100%;
-    .contenedorFooter {
-        
-     @include flex;
 
-        color: brown;
-        font-size: 15px;
-        @include fuente;
+    .contenedorFooter {
+
+        @include flex;
+
+        /*        color: brown;
+        font-size: 15px; */
+        @include contRedesFooter;
+
 
         .footerGeneral {
-            li {
-                list-style: none;
 
-                a {
-                    text-decoration: none;
-                }
-            }
-
-            .colorLink {
-                color: black;
-
-                &:hover {
-                    color: blueviolet;
-                    font-weight: bold;
-                }
-            }
+            @include noStyleDcoration;
         }
 
         .footerPoliticas {
-            li {
-                list-style: none;
-
-                a {
-                    text-decoration: none;
-                }
-            }
-
-            .colorLink {
-                color: black;
-
-                &:hover {
-                    color: blueviolet;
-                    font-weight: bold;
-                }
-            }
+            @include noStyleDcoration;
         }
 
         .footerSuscribete {
-            .colorLink {
-                color: black;
-            }
-
-            .sizeIconEmailFooter {
-                width: 30px;
-                margin: 3px;
-            }
+            @include noStyleDcoration;
         }
 
+        .sizeIconEmailFooter {
+            width: 30px;
+            margin: 3px;
+        }
     }
+
 }
