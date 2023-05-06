@@ -80,24 +80,21 @@
          ;
          justify-content: center;
          place-items: center;
-
+         height: 100vh;
 
          .perfil {
-             grid-area: perfil;
-             background-color: blue;
-             display: flex;
 
-
-             align-items: center;
-             justify-content: center;
-
+             .ancho {
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+             }
          }
 
          .header {
-             grid-area: header;
-
-             .menu li a {
-                 font-size: 10px;
+             .menu {
+                 display: flex;
+                 flex-wrap: wrap;
              }
 
          }
@@ -108,7 +105,6 @@
          }
 
          .productos {
-             grid-area: productos;
 
              .princContenedor {
                  display: flex;
@@ -149,8 +145,7 @@
 
 
          .footer {
-
-             grid-area: footer;
+            
          }
      }
 
