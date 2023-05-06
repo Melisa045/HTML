@@ -1,7 +1,68 @@
 .productos {
     grid-area: productos;
 
-    .princContenedor {
+    .tituloPrincipal1 {
+        color: palevioletred;
+        font-weight: bold;
+        @include fuente;
+        padding: 1% 1%;
+    }
+
+    .tituloPrincipal2 {
+        color: palevioletred;
+        font-weight: bold;
+        @include fuente;
+        padding: 1% 1%;
+    }
+
+    .princContenedorFlores {
+
+        @include flex;
+
+        .spaceImgPrincipal {
+            padding: 0 1px;
+            @include contRedesFooter;
+
+
+            .subtituloPrincipal {
+                text-align: center;
+                color: yellowgreen;
+                font-weight: bold;
+                @include fuente;
+
+            }
+
+            .sizePrincImage {
+                width: 280px;
+                height: 260px;
+                transition: all 1s;
+
+                &:hover {
+                    transform: scale(1.1, 1.1);
+                }
+
+            }
+
+            .prinBtnCarForm {
+                text-align: center;
+
+                .prinBtnCar {
+
+                    cursor: pointer;
+
+                    @include fuente;
+
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: yellowgreen;
+                }
+            }
+
+        }
+
+    }
+    
+    .princContenedorPeluches {
 
         @include flex;
 
@@ -48,5 +109,51 @@
 
     }
 
+    .princContenedorPeluchesP {
+
+        @include flex;
+
+        .spaceImgPrincipal {
+            padding: 0 1px;
+            @include contRedesFooter;
+
+
+            .subtituloPrincipal {
+                text-align: center;
+                color: yellowgreen;
+                font-weight: bold;
+                @include fuente;
+
+            }
+
+            .sizePrincImage {
+                width: 280px;
+                height: 260px;
+                transition: all 1s;
+
+                &:hover {
+                    transform: scale(1.1, 1.1);
+                }
+
+            }
+
+            .prinBtnCarForm {
+                text-align: center;
+
+                .prinBtnCar {
+
+                    cursor: pointer;
+
+                    @include fuente;
+
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: yellowgreen;
+                }
+            }
+
+        }
+
+    }
 
 }

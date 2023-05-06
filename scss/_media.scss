@@ -4,69 +4,87 @@
      .contenedorPrincipal {
 
          grid-template-columns: repeat(2, 1fr);
-         grid-template-rows: repeat(2, 1fr);
+         grid-template-rows: repeat(3, 1fr);
          grid-template-areas:
-             "header principal"
-             "footer footer"
+             "perfil perfil"
+             "header productos"
+             "redes footer"
          ;
-     }
-
-     .headerProductos {
-         grid-area: header;
-         width: 50%;
-     }
-
-     .principalProductos {
-         grid-area: principal;
-         width: 50%;
-     }
+         justify-content: center;
+         place-items: center;
 
 
+         .perfil {
 
-     .sizePrincImage {
-         width: 150px;
-         height: 75px;
-     }
+             .ancho {
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+             }
+         }
 
-     .spaceImgPrincipal {
-         padding: 0 10px;
-         margin: 2px 2px;
-     }
+         .header {
+             display: flex;
 
-     .subtituloPrincipal {
-         padding: 0 5px;
-         font-size: 15px;
+             .menu {
 
-     }
+                 flex-wrap: wrap;
+                 align-items: flex-start;
+                 align-content: flex-start;
+                 justify-content: space-between;
+             }
+         }
 
-     .prinBtnCarForm {
-         border-radius: 0 0 5px 5px;
-         padding: 0 0.5px;
-     }
+         .productos {
+             .princContenedorFlores {
+                 .sizePrincImage {
+                     width: 120px;
+                     height: 100px;
+                 }
+             }
 
-     .headerProductosSize {
-         font-size: 15px;
-     }
+             .princContenedorPeluches {
+                 display: none;
+             }
 
-     .menu li {
-         font-size: 15px;
-     }
+             .spaceImgPrincipal {
+                 padding: 0 1px;
+                 margin: 1px 1px;
 
-     .contenedorCarrousel {
-         visibility: hidden;
-         content-visibility: hidden;
+                 .subtituloPrincipal {
+                     font-size: 10px;
+
+                 }
+
+                 .prinBtnCarForm {
+                     .prinBtnCar {
+                         font-size: 10px;
+                     }
+                 }
+
+                 .sizePrincImage {
+                     width: 130px;
+                     height: 75px;
+                 }
+
+             }
+         }
+
+         .contenedorCarousel {
+             visibility: hidden;
+             content-visibility: hidden;
+         }
+
+         .redes {
+             display: none;
+         }
+
      }
 
  }
 
  /* TAMAÑO MOBILE 500PX O MENOS */
  @media screen and (max-width:500px) {
-     * {
-         /*   margin: 0; */
-         /*    padding: 0; */
-         box-sizing: border-box;
-
-     }
 
      .contenedorPrincipal {
          display: grid;
@@ -94,7 +112,7 @@
          .header {
              .menu {
                  display: flex;
-                 flex-wrap: wrap;
+                 flex-direction: column;
              }
 
          }
@@ -111,7 +129,7 @@
 
              }
 
-             .princContenedor {
+             .princContenedorFlores {
                  display: flex;
                  flex-direction: column;
                  place-items: center;
@@ -120,6 +138,17 @@
                  align-content: center;
 
              }
+
+             .princContenedorPeluches {
+                 display: flex;
+                 flex-direction: column;
+                 place-items: center;
+                 text-align: center;
+                 align-items: center;
+                 align-content: center;
+
+             }
+
 
              .spaceImgPrincipal {
                  padding: 0 1px;
@@ -136,16 +165,6 @@
                      height: 75px;
                  }
 
-                 .subtituloPrincipal {
-                     padding: 0 3px;
-                     font-size: 10px;
-
-                 }
-
-                 .prinBtnCarForm {
-                     border-radius: 0 0 5px 5px;
-                     padding: 0 0.5px;
-                 }
              }
 
              .fontContactos {
@@ -210,5 +229,14 @@
              font-size: 9px;
          }
 
+         .tituloPrincipal1 {
+             font-size: 10px;
+         }
+
+         .tituloPrincipal2 {
+             color: palevioletred;
+             font-size: 10px;
+
+         }
      }
  }

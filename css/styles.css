@@ -110,7 +110,21 @@ input[type=checkbox]:checked {
 .productos {
   grid-area: productos;
 }
-.productos .princContenedor {
+.productos .tituloPrincipal1 {
+  color: palevioletred;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  padding: 1% 1%;
+}
+.productos .tituloPrincipal2 {
+  color: palevioletred;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  padding: 1% 1%;
+}
+.productos .princContenedorFlores {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -119,31 +133,113 @@ input[type=checkbox]:checked {
   padding: 0;
   margin: 0;
 }
-.productos .princContenedor .spaceImgPrincipal {
+.productos .princContenedorFlores .spaceImgPrincipal {
   padding: 0 1px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: brown;
   font-size: 15px;
 }
-.productos .princContenedor .spaceImgPrincipal .subtituloPrincipal {
+.productos .princContenedorFlores .spaceImgPrincipal .subtituloPrincipal {
   text-align: center;
   color: yellowgreen;
   font-weight: bold;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 20px;
 }
-.productos .princContenedor .spaceImgPrincipal .sizePrincImage {
+.productos .princContenedorFlores .spaceImgPrincipal .sizePrincImage {
   width: 280px;
   height: 260px;
   transition: all 1s;
 }
-.productos .princContenedor .spaceImgPrincipal .sizePrincImage:hover {
+.productos .princContenedorFlores .spaceImgPrincipal .sizePrincImage:hover {
   transform: scale(1.1, 1.1);
 }
-.productos .princContenedor .spaceImgPrincipal .prinBtnCarForm {
+.productos .princContenedorFlores .spaceImgPrincipal .prinBtnCarForm {
   text-align: center;
 }
-.productos .princContenedor .spaceImgPrincipal .prinBtnCarForm .prinBtnCar {
+.productos .princContenedorFlores .spaceImgPrincipal .prinBtnCarForm .prinBtnCar {
+  cursor: pointer;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: yellowgreen;
+}
+.productos .princContenedorPeluches {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.productos .princContenedorPeluches .spaceImgPrincipal {
+  padding: 0 1px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: brown;
+  font-size: 15px;
+}
+.productos .princContenedorPeluches .spaceImgPrincipal .subtituloPrincipal {
+  text-align: center;
+  color: yellowgreen;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+}
+.productos .princContenedorPeluches .spaceImgPrincipal .sizePrincImage {
+  width: 280px;
+  height: 260px;
+  transition: all 1s;
+}
+.productos .princContenedorPeluches .spaceImgPrincipal .sizePrincImage:hover {
+  transform: scale(1.1, 1.1);
+}
+.productos .princContenedorPeluches .spaceImgPrincipal .prinBtnCarForm {
+  text-align: center;
+}
+.productos .princContenedorPeluches .spaceImgPrincipal .prinBtnCarForm .prinBtnCar {
+  cursor: pointer;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: yellowgreen;
+}
+.productos .princContenedorPeluchesP {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.productos .princContenedorPeluchesP .spaceImgPrincipal {
+  padding: 0 1px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: brown;
+  font-size: 15px;
+}
+.productos .princContenedorPeluchesP .spaceImgPrincipal .subtituloPrincipal {
+  text-align: center;
+  color: yellowgreen;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+}
+.productos .princContenedorPeluchesP .spaceImgPrincipal .sizePrincImage {
+  width: 280px;
+  height: 260px;
+  transition: all 1s;
+}
+.productos .princContenedorPeluchesP .spaceImgPrincipal .sizePrincImage:hover {
+  transform: scale(1.1, 1.1);
+}
+.productos .princContenedorPeluchesP .spaceImgPrincipal .prinBtnCarForm {
+  text-align: center;
+}
+.productos .princContenedorPeluchesP .spaceImgPrincipal .prinBtnCarForm .prinBtnCar {
   cursor: pointer;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 20px;
@@ -276,51 +372,56 @@ footer .contenedorFooter .sizeIconEmailFooter {
 @media screen and (max-width: 768px) {
   .contenedorPrincipal {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "header principal" "footer footer";
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "perfil perfil" "header productos" "redes footer";
+    justify-content: center;
+    place-items: center;
   }
-  .headerProductos {
-    grid-area: header;
-    width: 50%;
+  .contenedorPrincipal .perfil .ancho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .principalProductos {
-    grid-area: principal;
-    width: 50%;
+  .contenedorPrincipal .header {
+    display: flex;
   }
-  .sizePrincImage {
-    width: 150px;
+  .contenedorPrincipal .header .menu {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-between;
+  }
+  .contenedorPrincipal .productos .princContenedorFlores .sizePrincImage {
+    width: 120px;
+    height: 100px;
+  }
+  .contenedorPrincipal .productos .princContenedorPeluches {
+    display: none;
+  }
+  .contenedorPrincipal .productos .spaceImgPrincipal {
+    padding: 0 1px;
+    margin: 1px 1px;
+  }
+  .contenedorPrincipal .productos .spaceImgPrincipal .subtituloPrincipal {
+    font-size: 10px;
+  }
+  .contenedorPrincipal .productos .spaceImgPrincipal .prinBtnCarForm .prinBtnCar {
+    font-size: 10px;
+  }
+  .contenedorPrincipal .productos .spaceImgPrincipal .sizePrincImage {
+    width: 130px;
     height: 75px;
   }
-  .spaceImgPrincipal {
-    padding: 0 10px;
-    margin: 2px 2px;
-  }
-  .subtituloPrincipal {
-    padding: 0 5px;
-    font-size: 15px;
-  }
-  .prinBtnCarForm {
-    border-radius: 0 0 5px 5px;
-    padding: 0 0.5px;
-  }
-  .headerProductosSize {
-    font-size: 15px;
-  }
-  .menu li {
-    font-size: 15px;
-  }
-  .contenedorCarrousel {
+  .contenedorPrincipal .contenedorCarousel {
     visibility: hidden;
     content-visibility: hidden;
+  }
+  .contenedorPrincipal .redes {
+    display: none;
   }
 }
 /* TAMAÑO MOBILE 500PX O MENOS */
 @media screen and (max-width: 500px) {
-  * {
-    /*   margin: 0; */
-    /*    padding: 0; */
-    box-sizing: border-box;
-  }
   .contenedorPrincipal {
     display: grid;
     grid-template-columns: 1fr;
@@ -336,7 +437,7 @@ footer .contenedorFooter .sizeIconEmailFooter {
   }
   .contenedorPrincipal .header .menu {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
   .contenedorPrincipal .contenedorCarousel {
     visibility: hidden;
@@ -345,7 +446,15 @@ footer .contenedorFooter .sizeIconEmailFooter {
   .contenedorPrincipal .productos .tituloPrincipal {
     font-size: 13px;
   }
-  .contenedorPrincipal .productos .princContenedor {
+  .contenedorPrincipal .productos .princContenedorFlores {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+  }
+  .contenedorPrincipal .productos .princContenedorPeluches {
     display: flex;
     flex-direction: column;
     place-items: center;
@@ -363,14 +472,6 @@ footer .contenedorFooter .sizeIconEmailFooter {
   .contenedorPrincipal .productos .spaceImgPrincipal .sizePrincImage {
     width: 130px;
     height: 75px;
-  }
-  .contenedorPrincipal .productos .spaceImgPrincipal .subtituloPrincipal {
-    padding: 0 3px;
-    font-size: 10px;
-  }
-  .contenedorPrincipal .productos .spaceImgPrincipal .prinBtnCarForm {
-    border-radius: 0 0 5px 5px;
-    padding: 0 0.5px;
   }
   .contenedorPrincipal .productos .fontContactos {
     font-weight: none;
@@ -412,6 +513,13 @@ footer .contenedorFooter .sizeIconEmailFooter {
   }
   .contenedorPrincipal .tituloPrincPeluches {
     font-size: 9px;
+  }
+  .contenedorPrincipal .tituloPrincipal1 {
+    font-size: 10px;
+  }
+  .contenedorPrincipal .tituloPrincipal2 {
+    color: palevioletred;
+    font-size: 10px;
   }
 }
 .formPerfil {
