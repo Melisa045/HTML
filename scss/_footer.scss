@@ -7,21 +7,33 @@ footer {
 
         @include flex;
 
-        
+
         @include contRedesFooter;
 
 
         .footerGeneral {
 
             @include noStyleDcoration;
+
+            .titleFooter {
+                font-size: 15px;
+            }
         }
 
         .footerPoliticas {
             @include noStyleDcoration;
+
+            .titleFooter {
+                font-size: 15px;
+            }
         }
 
         .footerSuscribete {
             @include noStyleDcoration;
+
+            .titleFooter {
+                font-size: 15px;
+            }
         }
 
         .sizeIconEmailFooter {

@@ -7,7 +7,6 @@
 }
 
 html {
-  /*  font-size: 62.5%; */
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 html body .contenedorPrincipal {
@@ -17,6 +16,14 @@ html body .contenedorPrincipal {
   grid-template-areas: "perfil perfil perfil perfil " "header header header header" "carousel carousel carousel carousel" "productos productos productos productos" "redes redes redes redes" "pie pie pie pie";
   justify-content: center;
   background-color: white;
+}
+
+.tituloPrincipal {
+  color: palevioletred;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  padding: 1% 1%;
 }
 
 .perfil {
@@ -144,13 +151,6 @@ input[type=checkbox]:checked {
   text-transform: uppercase;
   color: yellowgreen;
 }
-.productos .tituloPrincipal {
-  color: palevioletred;
-  font-weight: bold;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 20px;
-  padding: 1% 1%;
-}
 
 .redes {
   grid-area: redes;
@@ -232,6 +232,9 @@ footer .contenedorFooter .footerGeneral .colorLink:hover {
   color: blueviolet;
   font-weight: bold;
 }
+footer .contenedorFooter .footerGeneral .titleFooter {
+  font-size: 15px;
+}
 footer .contenedorFooter .footerPoliticas li {
   list-style: none;
 }
@@ -245,6 +248,9 @@ footer .contenedorFooter .footerPoliticas .colorLink:hover {
   color: blueviolet;
   font-weight: bold;
 }
+footer .contenedorFooter .footerPoliticas .titleFooter {
+  font-size: 15px;
+}
 footer .contenedorFooter .footerSuscribete li {
   list-style: none;
 }
@@ -257,6 +263,9 @@ footer .contenedorFooter .footerSuscribete .colorLink {
 footer .contenedorFooter .footerSuscribete .colorLink:hover {
   color: blueviolet;
   font-weight: bold;
+}
+footer .contenedorFooter .footerSuscribete .titleFooter {
+  font-size: 15px;
 }
 footer .contenedorFooter .sizeIconEmailFooter {
   width: 30px;
@@ -308,8 +317,8 @@ footer .contenedorFooter .sizeIconEmailFooter {
 /* TAMAÑO MOBILE 500PX O MENOS */
 @media screen and (max-width: 500px) {
   * {
-    margin: 0;
-    padding: 0;
+    /*   margin: 0; */
+    /*    padding: 0; */
     box-sizing: border-box;
   }
   .contenedorPrincipal {
@@ -319,7 +328,6 @@ footer .contenedorFooter .sizeIconEmailFooter {
     grid-template-areas: "perfil" "header" "productos" "footer";
     justify-content: center;
     place-items: center;
-    height: 100vh;
   }
   .contenedorPrincipal .perfil .ancho {
     display: flex;
@@ -334,6 +342,9 @@ footer .contenedorFooter .sizeIconEmailFooter {
     visibility: hidden;
     content-visibility: hidden;
   }
+  .contenedorPrincipal .productos .tituloPrincipal {
+    font-size: 13px;
+  }
   .contenedorPrincipal .productos .princContenedor {
     display: flex;
     flex-direction: column;
@@ -345,6 +356,9 @@ footer .contenedorFooter .sizeIconEmailFooter {
   .contenedorPrincipal .productos .spaceImgPrincipal {
     padding: 0 1px;
     margin: 1px 1px;
+  }
+  .contenedorPrincipal .productos .spaceImgPrincipal .prinBtnCarForm .prinBtnCar {
+    font-size: 10px;
   }
   .contenedorPrincipal .productos .spaceImgPrincipal .sizePrincImage {
     width: 130px;
@@ -358,9 +372,46 @@ footer .contenedorFooter .sizeIconEmailFooter {
     border-radius: 0 0 5px 5px;
     padding: 0 0.5px;
   }
+  .contenedorPrincipal .productos .fontContactos {
+    font-weight: none;
+    font-size: 15px;
+  }
+  .contenedorPrincipal .productos .formPerfilBtnContactos {
+    font-size: 15px;
+    color: rgb(84, 82, 179);
+    background-color: rgb(53, 230, 230);
+  }
   .contenedorPrincipal .contenedorRedes {
     visibility: hidden;
     content-visibility: hidden;
+  }
+  .contenedorPrincipal .footer .contenedorFooter {
+    font-size: 10px;
+  }
+  .contenedorPrincipal .footer .contenedorFooter .titleFooter {
+    font-size: 10px;
+  }
+  .contenedorPrincipal .footer .contenedorFooter .sizeIconEmailFooter {
+    width: 15px;
+    margin: 1px;
+  }
+  .contenedorPrincipal .contRegistrar {
+    font-size: 13px;
+  }
+  .contenedorPrincipal .contRegistrar .formPerfilSelected {
+    font-size: 12px;
+  }
+  .contenedorPrincipal .contRegistrar .formPerfilBtn {
+    font-size: 15px;
+  }
+  .contenedorPrincipal .contRegistrar .tituloPrincipal {
+    font-size: 15px;
+  }
+  .contenedorPrincipal .tituloPrincArreglos {
+    font-size: 10px;
+  }
+  .contenedorPrincipal .tituloPrincPeluches {
+    font-size: 9px;
   }
 }
 .formPerfil {
@@ -368,6 +419,14 @@ footer .contenedorFooter .sizeIconEmailFooter {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 20px;
   color: rgb(179, 82, 170);
+}
+
+.tituloPrincArreglos {
+  color: palevioletred;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  padding: 1% 1%;
 }
 
 .princContenedor {
@@ -402,20 +461,31 @@ footer .contenedorFooter .sizeIconEmailFooter {
   color: rgb(84, 82, 179);
   background-color: rgb(53, 230, 230);
 }
+.contRegistrar .tituloPrincipalSub {
+  font-size: 18px;
+  font-weight: bold;
+  color: darkblue;
+}
 
 .fontContactos {
-  font-size: 17px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 20px;
   color: rgb(99, 46, 55);
   font-weight: bold;
 }
 .fontContactos .formPerfilBtnContactos {
-  font-size: 22px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 20px;
   color: rgb(84, 82, 179);
   background-color: rgb(53, 230, 230);
+}
+
+.tituloPrincPeluches {
+  color: palevioletred;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  padding: 1% 1%;
 }
 
 /*# sourceMappingURL=styles.css.map */

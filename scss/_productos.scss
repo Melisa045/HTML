@@ -1,7 +1,7 @@
 .productos {
     grid-area: productos;
-    
-      .princContenedor {
+
+    .princContenedor {
 
         @include flex;
 
@@ -48,10 +48,5 @@
 
     }
 
-    .tituloPrincipal {
-        color: palevioletred;
-        font-weight: bold;
-        @include fuente;
-        padding: 1% 1%;
-    }
+
 }

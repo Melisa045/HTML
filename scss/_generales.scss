@@ -6,11 +6,10 @@
 
 html {
 
-   /*  font-size: 62.5%; */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
     body {
-  
+
         .contenedorPrincipal {
             display: grid;
             grid-template-columns: repeat(4, 0.2fr);
@@ -49,7 +48,7 @@ html {
 @mixin fuente {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
-   }
+}
 
 @mixin noStyleDcoration {
     li {
@@ -59,12 +58,21 @@ html {
             text-decoration: none;
         }
     }
-    .colorLink {
-    color: black;
 
-    &:hover {
-        color: blueviolet;
-        font-weight: bold;
+    .colorLink {
+        color: black;
+
+        &:hover {
+            color: blueviolet;
+            font-weight: bold;
+        }
     }
 }
+
+.tituloPrincipal {
+    color: palevioletred;
+    font-weight: bold;
+    @include fuente;
+    padding: 1% 1%;
 }
+
