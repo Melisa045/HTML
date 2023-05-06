@@ -66,8 +66,9 @@
          .contenedorPrincipal {
              display: grid;
              grid-template-columns: 1fr;
-             grid-template-rows: 0.2fr 1fr 0.3fr;
+             grid-template-rows: 0.3fr, 0.2fr 1fr 0.3fr;
              grid-template-areas:
+                 "perfil"
                  "header"
                  "productos"
                  "footer"
@@ -75,18 +76,11 @@
              place-items: center;
 
              .perfil {
-                 place-items: center;
-                 display: flex;
-                 flex-wrap: wrap;
+
                  align-items: center;
                  align-content: center;
 
 
-             }
-
-             .contenedorCarousel {
-                 visibility: hidden;
-                 content-visibility: hidden;
              }
 
              .header {
@@ -99,6 +93,11 @@
                      font-size: 10px;
                  }
 
+             }
+
+             .contenedorCarousel {
+                 visibility: hidden;
+                 content-visibility: hidden;
              }
 
              .productos {

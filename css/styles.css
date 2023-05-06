@@ -314,20 +314,13 @@ footer .contenedorFooter .sizeIconEmailFooter {
   body .contenedorPrincipal {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 1fr 0.3fr;
-    grid-template-areas: "header" "productos" "footer";
+    grid-template-rows: 0.3fr, 0.2fr 1fr 0.3fr;
+    grid-template-areas: "perfil" "header" "productos" "footer";
     place-items: center;
   }
   body .contenedorPrincipal .perfil {
-    place-items: center;
-    display: flex;
-    flex-wrap: wrap;
     align-items: center;
     align-content: center;
-  }
-  body .contenedorPrincipal .contenedorCarousel {
-    visibility: hidden;
-    content-visibility: hidden;
   }
   body .contenedorPrincipal .header {
     grid-area: header;
@@ -337,6 +330,10 @@ footer .contenedorFooter .sizeIconEmailFooter {
   }
   body .contenedorPrincipal .header .menu li a {
     font-size: 10px;
+  }
+  body .contenedorPrincipal .contenedorCarousel {
+    visibility: hidden;
+    content-visibility: hidden;
   }
   body .contenedorPrincipal .productos {
     grid-area: productos;
