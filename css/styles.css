@@ -219,8 +219,6 @@ footer .contenedorFooter {
   width: 100%;
   padding: 0;
   margin: 0;
-  /*        color: brown;
-  font-size: 15px; */
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: brown;
   font-size: 15px;
@@ -313,31 +311,29 @@ footer .contenedorFooter .sizeIconEmailFooter {
 }
 /* TAMAÑO MOBILE 500PX O MENOS */
 @media screen and (max-width: 500px) {
-  body {
-    /*         flex-direction: wrap; */
+  body .contenedorPrincipal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 0.3fr;
+    grid-template-areas: "header" "productos" "footer";
+    place-items: center;
+  }
+  body .contenedorPrincipal .perfil {
+    place-items: center;
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
   }
-  body .contenedorPrincipal {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 1fr 0.3fr;
-    grid-template-areas: "header" "principal" "footer";
-    /*     flex-direction: wrap; */
-    /*  flex-wrap: wrap;
-                align-items: center;
-                align-content: center;
-    */
-  }
-  body .contenedorPrincipal .contenedorCarrousel {
+  body .contenedorPrincipal .contenedorCarousel {
     visibility: hidden;
     content-visibility: hidden;
   }
   body .contenedorPrincipal .header {
     grid-area: header;
-    flex-direction: wrap;
     align-items: center;
     align-content: center;
+    place-items: center;
   }
   body .contenedorPrincipal .header .menu li a {
     font-size: 10px;
@@ -361,6 +357,10 @@ footer .contenedorFooter .sizeIconEmailFooter {
   body .contenedorPrincipal .productos .spaceImgPrincipal .prinBtnCarForm {
     border-radius: 0 0 5px 5px;
     padding: 0 0.5px;
+  }
+  body .contenedorPrincipal .contenedorRedes {
+    visibility: hidden;
+    content-visibility: hidden;
   }
   body .contenedorPrincipal .footer {
     grid-area: footer;

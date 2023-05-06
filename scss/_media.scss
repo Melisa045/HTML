@@ -62,36 +62,38 @@
  /* TAMAÑO MOBILE 500PX O MENOS */
  @media screen and (max-width:500px) {
      body {
-/*         flex-direction: wrap; */
-        flex-wrap: wrap;
-        align-items: center;
-        align-content: center;
 
          .contenedorPrincipal {
-
+             display: grid;
              grid-template-columns: 1fr;
              grid-template-rows: 0.2fr 1fr 0.3fr;
              grid-template-areas:
                  "header"
-                 "principal"
+                 "productos"
                  "footer"
              ;
-         /*     flex-direction: wrap; */
-            /*  flex-wrap: wrap;
-             align-items: center;
-             align-content: center;
- */
+             place-items: center;
 
-             .contenedorCarrousel {
+             .perfil {
+                 place-items: center;
+                 display: flex;
+                 flex-wrap: wrap;
+                 align-items: center;
+                 align-content: center;
+
+
+             }
+
+             .contenedorCarousel {
                  visibility: hidden;
                  content-visibility: hidden;
              }
 
              .header {
                  grid-area: header;
-                 flex-direction: wrap;
                  align-items: center;
                  align-content: center;
+                 place-items: center;
 
                  .menu li a {
                      font-size: 10px;
@@ -125,6 +127,12 @@
                      }
                  }
              }
+
+             .contenedorRedes {
+                 visibility: hidden;
+                 content-visibility: hidden;
+             }
+
 
              .footer {
 
