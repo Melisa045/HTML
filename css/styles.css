@@ -391,26 +391,19 @@ footer .contenedorFooter .sizeIconEmailFooter {
     align-content: flex-start;
     justify-content: space-between;
   }
-  .contenedorPrincipal .productos .princContenedorFlores .sizePrincImage {
-    width: 120px;
-    height: 100px;
-  }
-  .contenedorPrincipal .productos .princContenedorPeluches {
-    display: none;
-  }
   .contenedorPrincipal .productos .spaceImgPrincipal {
     padding: 0 1px;
     margin: 1px 1px;
+  }
+  .contenedorPrincipal .productos .spaceImgPrincipal .sizePrincImage {
+    width: 117px;
+    height: 70px;
   }
   .contenedorPrincipal .productos .spaceImgPrincipal .subtituloPrincipal {
     font-size: 10px;
   }
   .contenedorPrincipal .productos .spaceImgPrincipal .prinBtnCarForm .prinBtnCar {
     font-size: 10px;
-  }
-  .contenedorPrincipal .productos .spaceImgPrincipal .sizePrincImage {
-    width: 130px;
-    height: 75px;
   }
   .contenedorPrincipal .contenedorCarousel {
     visibility: hidden;
@@ -470,8 +463,8 @@ footer .contenedorFooter .sizeIconEmailFooter {
     font-size: 10px;
   }
   .contenedorPrincipal .productos .spaceImgPrincipal .sizePrincImage {
-    width: 130px;
-    height: 75px;
+    width: 150px;
+    height: 90px;
   }
   .contenedorPrincipal .productos .fontContactos {
     font-weight: none;
@@ -500,7 +493,7 @@ footer .contenedorFooter .sizeIconEmailFooter {
     font-size: 13px;
   }
   .contenedorPrincipal .contRegistrar .formPerfilSelected {
-    font-size: 12px;
+    font-size: 11px;
   }
   .contenedorPrincipal .contRegistrar .formPerfilBtn {
     font-size: 15px;
@@ -535,11 +528,6 @@ footer .contenedorFooter .sizeIconEmailFooter {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 20px;
   padding: 1% 1%;
-}
-
-.princContenedor {
-  display: flex;
-  padding: 10px 40px;
 }
 
 .spaceImgPrinArre {
