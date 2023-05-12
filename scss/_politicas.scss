@@ -1,0 +1,22 @@
+   .formatoPoliticas {
+       text-align: center;
+       text-transform: uppercase;
+       font-size: 22px;
+   }
+
+   .subformatoPoliticas {
+       text-decoration: underline;
+       font-size: 20px;
+   }
+
+
+   .contenedorPolitcas {
+       display: flex;
+       width: 100%;
+       justify-content: center;
+       align-items: center;
+       align-content: center;
+       text-align: justify;
+       margin-top: 30px;
+       margin-bottom: 25px;
+   }
