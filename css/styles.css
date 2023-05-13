@@ -593,7 +593,7 @@ footer .contenedorFooter .sizeIconEmailFooter {
 
 .subformatoPoliticas {
   text-decoration: underline;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .contenedorPolitcas {
@@ -605,6 +605,18 @@ footer .contenedorFooter .sizeIconEmailFooter {
   text-align: justify;
   margin-top: 30px;
   margin-bottom: 25px;
+}
+
+.contenedorImgPol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagenPoliticas {
+  width: 15%;
+  height: 15%;
+  padding-left: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
