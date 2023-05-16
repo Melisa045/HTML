@@ -5,153 +5,72 @@
         color: palevioletred;
         font-weight: bold;
         @include fuente;
-        padding: 1% 1%;
+        padding: 5% 1% 2% 1%;
     }
 
     .tituloPrincipal2 {
         color: palevioletred;
         font-weight: bold;
         @include fuente;
-        padding: 1% 1%;
+        padding: 4% 1% 2% 1%;
     }
 
-    .princContenedorFlores {
-
-        @include flex;
-
-        .spaceImgPrincipal {
-            padding: 0 1px;
-            @include contRedesFooter;
-
-
-            .subtituloPrincipal {
-                text-align: center;
-                color: yellowgreen;
-                font-weight: bold;
-                @include fuente;
-
-            }
-
-            .sizePrincImage {
-                width: 280px;
-                height: 260px;
-                transition: all 1s;
-
-                &:hover {
-                    transform: scale(1.1, 1.1);
-                }
-
-            }
-
-            .prinBtnCarForm {
-                text-align: center;
-
-                .prinBtnCar {
-
-                    cursor: pointer;
-
-                    @include fuente;
-
-                    text-align: center;
-                    text-transform: uppercase;
-                    color: yellowgreen;
-                }
-            }
-
-        }
-
+       .princContenedorFlores {
+        @include flex;      
     }
-    
+
     .princContenedorPeluches {
-
         @include flex;
-
-        .spaceImgPrincipal {
-            padding: 0 1px;
-            @include contRedesFooter;
-
-
-            .subtituloPrincipal {
-                text-align: center;
-                color: yellowgreen;
-                font-weight: bold;
-                @include fuente;
-
-            }
-
-            .sizePrincImage {
-                width: 280px;
-                height: 260px;
-                transition: all 1s;
-
-                &:hover {
-                    transform: scale(1.1, 1.1);
-                }
-
-            }
-
-            .prinBtnCarForm {
-                text-align: center;
-
-                .prinBtnCar {
-
-                    cursor: pointer;
-
-                    @include fuente;
-
-                    text-align: center;
-                    text-transform: uppercase;
-                    color: yellowgreen;
-                }
-            }
-
-        }
-
     }
 
-    .princContenedorPeluchesP {
+    .spaceImgPrincipal {
+        padding: 0 1px;
+        @include contRedesFooter;
 
-        @include flex;
+        .sizePrincImage {
+            width: 300px;
+            height: 260px;
+            padding: 0% 1% 0% 1%;
+            transition: all 1s;
+    
+            &:hover {
+                transform: scale(1.1, 1.1);
+            }
+    
+        }
 
-        .spaceImgPrincipal {
-            padding: 0 1px;
-            @include contRedesFooter;
+        .subtitProdNombre {
+            margin-top: 3%;
+            text-align: center;
+            color: yellowgreen;
+            font-weight: bold;
+            @include fuente;
+    
+        }
+    
+        .subtitProdPrecio {
+            text-align: center;
+            color: rgb(78, 107, 16);
+            font-weight: bold;
+            font-size: 15px;
+    
+        }
 
-
-            .subtituloPrincipal {
+        .prinBtnCarForm {
+            text-align: center;
+    
+            .prinBtnCar {
+    
+                cursor: pointer;
+    
+                font-size: 18px;
+    
                 text-align: center;
-                color: yellowgreen;
-                font-weight: bold;
-                @include fuente;
-
+                text-transform: uppercase;
+                color: white;
+              /*   background-color: rgb(248, 88, 88); */
+                background: linear-gradient(0deg, rgba(195, 34, 51, 1) 0%, rgba(247, 64, 228, 0.673) 100%);
             }
-
-            .sizePrincImage {
-                width: 280px;
-                height: 260px;
-                transition: all 1s;
-
-                &:hover {
-                    transform: scale(1.1, 1.1);
-                }
-
-            }
-
-            .prinBtnCarForm {
-                text-align: center;
-
-                .prinBtnCar {
-
-                    cursor: pointer;
-
-                    @include fuente;
-
-                    text-align: center;
-                    text-transform: uppercase;
-                    color: yellowgreen;
-                }
-            }
-
         }
 
     }

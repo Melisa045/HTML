@@ -2,12 +2,14 @@
     grid-area: redes;
     background-color: rgb(247, 200, 207);
     background-image: url(../assets/img/fondoRedes.jfif);
-
+    margin-top: 5%;
+    
     .contenedorRedes {
 
         @include flex;
-
+      
         .redesContGeneral {
+        
             @include noStyleDcoration;
             @include contRedesFooter;
         }

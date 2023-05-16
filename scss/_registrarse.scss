@@ -1,28 +1,60 @@
-.contRegistrar {
+.otros {
+    grid-area: otros;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 
-    @include flex;
+    .contRegistrar {
 
-    font-size: 17px;
+        width: 50%;
 
-    .formPerfilSelected {
         font-size: 17px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: rgb(99, 46, 55);
-        font-weight: bold;
-        
-    }
 
-    .formPerfilBtn {
-        font-size: 22px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: rgb(84, 82, 179);
-        background-color: rgb(53, 230, 230);
-    }
+        .contRegistrarForm {
+            align-items: center;
+            justify-content: center;
+        }
 
-    .tituloPrincipalSub {
+        .formPerfilSelected {
+            font-size: 17px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(99, 46, 55);
+            font-weight: bold;
 
-        font-size: 18px;
-        font-weight: bold;
-        color: darkblue;
+        }
+
+        .formPerfilBtn {
+              
+            font-size: 22px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(84, 82, 179);
+            background-color: rgb(53, 230, 230);
+        }
+
+        .centrarBotonRegistrar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .tituloPrincipal {
+
+            color: palevioletred;
+            font-weight: bold;
+            font-size: 27px;
+        }
+
+        .tituloPrincipalSub {
+
+            font-size: 17px;
+            font-weight: bold;
+            color: darkblue;
+        }
+
+        .fontInput{
+            margin-bottom: 25px;
+        }
     }
 }
