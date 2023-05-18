@@ -171,14 +171,14 @@ html body .imagen7 {
   font-weight: bold;
   font-family: "gnuolane_rg-webfont";
   font-size: 22px;
-  padding: 5% 1% 2% 1%;
+  padding: 5% 1% 1% 1%;
 }
 .productos .tituloPrincipal2 {
   color: palevioletred;
   font-weight: bold;
   font-family: "gnuolane_rg-webfont";
   font-size: 22px;
-  padding: 4% 1% 2% 1%;
+  padding: 4% 1% 1% 1%;
 }
 .productos .princContenedorFlores {
   display: flex;
@@ -515,7 +515,7 @@ footer .contenedorFooter .sizeIconEmailFooter {
   font-size: 25px;
   font-family: "gnuolane_rg-webfont";
   font-size: 22px;
-  color: rgb(179, 82, 170);
+  color: palevioletred;
 }
 
 .spaceArreglos {
@@ -537,6 +537,7 @@ footer .contenedorFooter .sizeIconEmailFooter {
   font-size: 22px;
   font-size: 19px;
   padding-left: 1%;
+  padding-bottom: 1%;
 }
 
 .subtitPrincArr2 {
@@ -627,12 +628,22 @@ footer .contenedorFooter .sizeIconEmailFooter {
 .formatoPoliticas {
   text-align: center;
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 28px;
+  padding: 2%;
+  padding-bottom: 3%;
 }
 
 .subformatoPoliticas {
   text-decoration: underline;
   font-size: 25px;
+  font-family: "gnuolane_rg-webfont";
+  color: palevioletred;
+}
+
+.subformatoPolDesc {
+  font-size: 23px;
+  font-family: "gnuolane_rg-webfont";
+  color: black;
 }
 
 .contenedorPolitcas {

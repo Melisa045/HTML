@@ -1,9 +1,7 @@
 .formPerfil {
     font-size: 25px;
     @include fuente;
-
-
-    color: rgb(179, 82, 170);
+    color: palevioletred;
 }
 
 .spaceArreglos {
@@ -14,7 +12,7 @@
     color: palevioletred;
     font-weight: bold;
     @include fuente;
-/*     font-size: 28px; */
+    /*     font-size: 28px; */
     padding: 1% 1%;
 }
 
@@ -23,6 +21,7 @@
     @include fuente;
     font-size: 19px;
     padding-left: 1%;
+    padding-bottom: 1%;
 }
 
 .subtitPrincArr2 {
