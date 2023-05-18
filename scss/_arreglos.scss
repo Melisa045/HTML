@@ -14,21 +14,21 @@
     color: palevioletred;
     font-weight: bold;
     @include fuente;
-    font-size: 28px;
+/*     font-size: 28px; */
     padding: 1% 1%;
 }
 
 .subtitPrincArr {
-    color: rgb(243, 128, 166);
+    color: black;
     @include fuente;
-    font-size: 20px;
+    font-size: 19px;
     padding-left: 1%;
 }
 
 .subtitPrincArr2 {
-    color: rgb(243, 128, 166);
+    color: black;
     @include fuente;
-    font-size: 18px;
+    font-size: 19px;
     padding-left: 1%;
     padding-bottom: 2%;
 }

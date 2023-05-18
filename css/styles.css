@@ -78,7 +78,7 @@ html body .imagen7 {
   color: palevioletred;
   font-weight: bold;
   font-family: "gnuolane_rg-webfont";
-  font-size: 20px;
+  font-size: 22px;
   padding: 1% 1%;
 }
 
@@ -114,7 +114,7 @@ html body .imagen7 {
   background: linear-gradient(0deg, rgb(195, 34, 51) 0%, rgba(247, 64, 228, 0.673) 100%);
   font-size: 22px;
   font-family: "gnuolane_rg-webfont";
-  font-size: 20px;
+  font-size: 22px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -170,14 +170,14 @@ html body .imagen7 {
   color: palevioletred;
   font-weight: bold;
   font-family: "gnuolane_rg-webfont";
-  font-size: 20px;
+  font-size: 22px;
   padding: 5% 1% 2% 1%;
 }
 .productos .tituloPrincipal2 {
   color: palevioletred;
   font-weight: bold;
   font-family: "gnuolane_rg-webfont";
-  font-size: 20px;
+  font-size: 22px;
   padding: 4% 1% 2% 1%;
 }
 .productos .princContenedorFlores {
@@ -201,7 +201,7 @@ html body .imagen7 {
 .productos .spaceImgPrincipal {
   padding: 0 1px;
   font-family: "gnuolane_rg-webfont";
-  font-size: 20px;
+  font-size: 22px;
   color: brown;
   font-size: 15px;
 }
@@ -220,7 +220,7 @@ html body .imagen7 {
   color: yellowgreen;
   font-weight: bold;
   font-family: "gnuolane_rg-webfont";
-  font-size: 20px;
+  font-size: 22px;
 }
 .productos .spaceImgPrincipal .subtitProdPrecio {
   text-align: center;
@@ -258,7 +258,7 @@ html body .imagen7 {
 }
 .redes .contenedorRedes .redesContGeneral {
   font-family: "gnuolane_rg-webfont";
-  font-size: 20px;
+  font-size: 22px;
   color: brown;
   font-size: 15px;
 }
@@ -277,14 +277,14 @@ html body .imagen7 {
 }
 .redes .contenedorRedes .arriba a {
   font-family: "gnuolane_rg-webfont";
-  font-size: 20px;
+  font-size: 22px;
   list-style: none;
   text-decoration: none;
   color: brown;
 }
 .redes .contenedorRedes .redesSociales .redesComentario {
   font-family: "gnuolane_rg-webfont";
-  font-size: 20px;
+  font-size: 22px;
 }
 .redes .contenedorRedes .redesSociales .redesSizeIcon {
   width: 50px;
@@ -307,7 +307,7 @@ footer .contenedorFooter {
   padding: 0;
   margin: 0;
   font-family: "gnuolane_rg-webfont";
-  font-size: 20px;
+  font-size: 22px;
   color: brown;
   font-size: 15px;
 }
@@ -514,7 +514,7 @@ footer .contenedorFooter .sizeIconEmailFooter {
 .formPerfil {
   font-size: 25px;
   font-family: "gnuolane_rg-webfont";
-  font-size: 20px;
+  font-size: 22px;
   color: rgb(179, 82, 170);
 }
 
@@ -526,24 +526,24 @@ footer .contenedorFooter .sizeIconEmailFooter {
   color: palevioletred;
   font-weight: bold;
   font-family: "gnuolane_rg-webfont";
-  font-size: 20px;
-  font-size: 28px;
+  font-size: 22px;
+  /*     font-size: 28px; */
   padding: 1% 1%;
 }
 
 .subtitPrincArr {
-  color: rgb(243, 128, 166);
+  color: black;
   font-family: "gnuolane_rg-webfont";
-  font-size: 20px;
-  font-size: 20px;
+  font-size: 22px;
+  font-size: 19px;
   padding-left: 1%;
 }
 
 .subtitPrincArr2 {
-  color: rgb(243, 128, 166);
+  color: black;
   font-family: "gnuolane_rg-webfont";
-  font-size: 20px;
-  font-size: 18px;
+  font-size: 22px;
+  font-size: 19px;
   padding-left: 1%;
   padding-bottom: 2%;
 }
@@ -571,14 +571,14 @@ footer .contenedorFooter .sizeIconEmailFooter {
 .otros .contRegistrar .formPerfilSelected {
   font-size: 17px;
   font-family: "gnuolane_rg-webfont";
-  font-size: 20px;
+  font-size: 22px;
   color: rgb(99, 46, 55);
   font-weight: bold;
 }
 .otros .contRegistrar .formPerfilBtn {
   font-size: 22px;
   font-family: "gnuolane_rg-webfont";
-  font-size: 20px;
+  font-size: 22px;
   color: rgb(84, 82, 179);
   background-color: rgb(53, 230, 230);
 }
@@ -604,13 +604,13 @@ footer .contenedorFooter .sizeIconEmailFooter {
 
 .fontContactos {
   font-family: "gnuolane_rg-webfont";
-  font-size: 20px;
+  font-size: 22px;
   color: rgb(99, 46, 55);
   font-weight: bold;
 }
 .fontContactos .formPerfilBtnContactos {
   font-family: "gnuolane_rg-webfont";
-  font-size: 20px;
+  font-size: 22px;
   color: rgb(84, 82, 179);
   background-color: rgb(53, 230, 230);
 }
@@ -619,7 +619,7 @@ footer .contenedorFooter .sizeIconEmailFooter {
   color: palevioletred;
   font-weight: bold;
   font-family: "gnuolane_rg-webfont";
-  font-size: 20px;
+  font-size: 22px;
   font-size: 20px;
   padding: 1% 1%;
 }
