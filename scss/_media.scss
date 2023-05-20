@@ -37,6 +37,7 @@
 
          .productos {
 
+
              .spaceImgPrincipal {
                  padding: 0 1px;
                  margin: 1px 1px;
@@ -88,6 +89,12 @@
          justify-content: center;
          place-items: center;
 
+         .contenedorGaleria {
+             grid-template-columns: repeat(5, 60px);
+             grid-template-rows: repeat(3, 100px);
+             gap: 6px 6px;
+         }
+
 
          .perfil {
 
@@ -113,9 +120,22 @@
 
          .productos {
 
+             .formatoPoliticas {
+                 font-size: 48px;
+             }
+
              .tituloPrincipal {
                  font-size: 13px;
 
+             }
+
+             .galeriaTitulo {
+                 padding-top: 15px;
+             }
+
+             .subtitPrincArr {
+                 visibility: hidden;
+                 content-visibility: hidden;
              }
 
              .princContenedorFlores {
@@ -191,41 +211,73 @@
              }
          }
 
-         .contRegistrar {
-             font-size: 13px;
 
-             .formPerfilSelected {
-                 font-size: 11px;
+         .otros {
+             .contRegistrar {
+                 font-size: 13px;
 
-             }
+                 .formPerfilSelected {
+                     font-size: 17px;
+                     font-family: 'gnuolane_rg-webfont';
+                     color: rgb(99, 46, 55);
+                     font-weight: bold;
 
-             .formPerfilBtn {
-                 font-size: 15px;
-             }
+                 }
 
-             .tituloPrincipal {
-                 font-size: 15px;
+                 .formPerfilBtn {
+                     font-size: 15px;
+                 }
+
+                 .tituloPrincipal {
+                     font-size: 15px;
+
+                 }
+
+                 .titPrincRegistrarse {
+                     font-size: 20px;
+                 }
+
+                 .tituloPrincipalSub {
+
+                     font-size: 15px;
+                 }
 
              }
          }
 
          .tituloPrincArreglos {
-             font-size: 10px;
+             font-size: 20px;
+             text-align: center;
+             font-family: 'gnuolane_rg-webfont';
+         }
+
+         .subtitPrincArr2 {
+             font-size: 15px;
+             text-align: justify;
+             font-family: 'gnuolane_rg-webfont';
+             color: rgb(94, 44, 52);
+
          }
 
          .tituloPrincPeluches {
 
-             font-size: 9px;
+             font-size: 20px;
+             text-align: center;
          }
 
          .tituloPrincipal1 {
-             font-size: 10px;
+             font-size: 20px;
+             color: palevioletred;
+             text-align: center;
          }
 
          .tituloPrincipal2 {
              color: palevioletred;
-             font-size: 10px;
+             font-size: 20px;
+             text-align: center;
 
          }
+
+
      }
  }

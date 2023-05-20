@@ -82,6 +82,20 @@ html body .imagen7 {
   padding: 1% 1%;
 }
 
+.galeriaTitulo {
+  display: flex;
+  justify-content: center;
+  color: palevioletred;
+  font-weight: bold;
+  font-family: "gnuolane_rg-webfont";
+  font-size: 22px;
+  padding: 1% 1%;
+}
+
+.linkPreguntas {
+  color: pink;
+}
+
 .perfil {
   grid-area: perfil;
   background-color: white;
@@ -112,7 +126,6 @@ html body .imagen7 {
 }
 .header .menu {
   background: linear-gradient(0deg, rgb(195, 34, 51) 0%, rgba(247, 64, 228, 0.673) 100%);
-  font-size: 22px;
   font-family: "gnuolane_rg-webfont";
   font-size: 22px;
   display: flex;
@@ -226,7 +239,7 @@ html body .imagen7 {
   text-align: center;
   color: rgb(78, 107, 16);
   font-weight: bold;
-  font-size: 15px;
+  font-size: 17px;
 }
 .productos .spaceImgPrincipal .prinBtnCarForm {
   text-align: center;
@@ -419,6 +432,11 @@ footer .contenedorFooter .sizeIconEmailFooter {
     justify-content: center;
     place-items: center;
   }
+  .contenedorPrincipal .contenedorGaleria {
+    grid-template-columns: repeat(5, 60px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 6px 6px;
+  }
   .contenedorPrincipal .perfil .ancho {
     display: flex;
     align-items: center;
@@ -432,8 +450,18 @@ footer .contenedorFooter .sizeIconEmailFooter {
     visibility: hidden;
     content-visibility: hidden;
   }
+  .contenedorPrincipal .productos .formatoPoliticas {
+    font-size: 48px;
+  }
   .contenedorPrincipal .productos .tituloPrincipal {
     font-size: 13px;
+  }
+  .contenedorPrincipal .productos .galeriaTitulo {
+    padding-top: 15px;
+  }
+  .contenedorPrincipal .productos .subtitPrincArr {
+    visibility: hidden;
+    content-visibility: hidden;
   }
   .contenedorPrincipal .productos .princContenedorFlores {
     display: flex;
@@ -485,30 +513,51 @@ footer .contenedorFooter .sizeIconEmailFooter {
     width: 15px;
     margin: 1px;
   }
-  .contenedorPrincipal .contRegistrar {
+  .contenedorPrincipal .otros .contRegistrar {
     font-size: 13px;
   }
-  .contenedorPrincipal .contRegistrar .formPerfilSelected {
-    font-size: 11px;
+  .contenedorPrincipal .otros .contRegistrar .formPerfilSelected {
+    font-size: 17px;
+    font-family: "gnuolane_rg-webfont";
+    color: rgb(99, 46, 55);
+    font-weight: bold;
   }
-  .contenedorPrincipal .contRegistrar .formPerfilBtn {
+  .contenedorPrincipal .otros .contRegistrar .formPerfilBtn {
     font-size: 15px;
   }
-  .contenedorPrincipal .contRegistrar .tituloPrincipal {
+  .contenedorPrincipal .otros .contRegistrar .tituloPrincipal {
+    font-size: 15px;
+  }
+  .contenedorPrincipal .otros .contRegistrar .titPrincRegistrarse {
+    font-size: 20px;
+  }
+  .contenedorPrincipal .otros .contRegistrar .tituloPrincipalSub {
     font-size: 15px;
   }
   .contenedorPrincipal .tituloPrincArreglos {
-    font-size: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "gnuolane_rg-webfont";
+  }
+  .contenedorPrincipal .subtitPrincArr2 {
+    font-size: 15px;
+    text-align: justify;
+    font-family: "gnuolane_rg-webfont";
+    color: rgb(94, 44, 52);
   }
   .contenedorPrincipal .tituloPrincPeluches {
-    font-size: 9px;
+    font-size: 20px;
+    text-align: center;
   }
   .contenedorPrincipal .tituloPrincipal1 {
-    font-size: 10px;
+    font-size: 20px;
+    color: palevioletred;
+    text-align: center;
   }
   .contenedorPrincipal .tituloPrincipal2 {
     color: palevioletred;
-    font-size: 10px;
+    font-size: 20px;
+    text-align: center;
   }
 }
 .formPerfil {
@@ -572,7 +621,6 @@ footer .contenedorFooter .sizeIconEmailFooter {
 .otros .contRegistrar .formPerfilSelected {
   font-size: 17px;
   font-family: "gnuolane_rg-webfont";
-  font-size: 22px;
   color: rgb(99, 46, 55);
   font-weight: bold;
 }
@@ -589,9 +637,10 @@ footer .contenedorFooter .sizeIconEmailFooter {
   align-items: center;
   margin-bottom: 15px;
 }
-.otros .contRegistrar .tituloPrincipal {
+.otros .contRegistrar .titPrincRegistrarse {
   color: palevioletred;
   font-weight: bold;
+  font-family: "gnuolane_rg-webfont";
   font-size: 27px;
 }
 .otros .contRegistrar .tituloPrincipalSub {
@@ -621,7 +670,6 @@ footer .contenedorFooter .sizeIconEmailFooter {
   font-weight: bold;
   font-family: "gnuolane_rg-webfont";
   font-size: 22px;
-  font-size: 20px;
   padding: 1% 1%;
 }
 
@@ -631,6 +679,8 @@ footer .contenedorFooter .sizeIconEmailFooter {
   font-size: 28px;
   padding: 2%;
   padding-bottom: 3%;
+  color: palevioletred;
+  font-family: "gnuolane_rg-webfont";
 }
 
 .subformatoPoliticas {

@@ -18,14 +18,14 @@
 
         .formPerfilSelected {
             font-size: 17px;
-            @include fuente;
+            font-family: 'gnuolane_rg-webfont';
             color: rgb(99, 46, 55);
             font-weight: bold;
 
         }
 
         .formPerfilBtn {
-              
+
             font-size: 22px;
             @include fuente;
             color: rgb(84, 82, 179);
@@ -39,10 +39,11 @@
             margin-bottom: 15px;
         }
 
-        .tituloPrincipal {
+        .titPrincRegistrarse {
 
             color: palevioletred;
             font-weight: bold;
+            font-family: 'gnuolane_rg-webfont';
             font-size: 27px;
         }
 
@@ -53,7 +54,7 @@
             color: darkblue;
         }
 
-        .fontInput{
+        .fontInput {
             margin-bottom: 25px;
         }
     }

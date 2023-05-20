@@ -153,3 +153,16 @@ html {
     @include fuente;
     padding: 1% 1%;
 }
+
+.galeriaTitulo {
+    display: flex;
+    justify-content: center;
+    color: palevioletred;
+    font-weight: bold;
+    @include fuente;
+    padding: 1% 1%;
+}
+
+.linkPreguntas{
+    color: pink;
+}
