@@ -1,283 +1,310 @@
- /* TAMAÑO TABLET 768PX */
- @media screen and (max-width:768px) {
-
-     .contenedorPrincipal {
-
-         grid-template-columns: repeat(2, 1fr);
-         grid-template-rows: repeat(3, 1fr);
-         grid-template-areas:
-             "perfil perfil"
-             "header productos"
-             "redes footer"
-         ;
-         justify-content: center;
-         place-items: center;
-
-
-         .perfil {
-
-             .ancho {
-                 display: flex;
-                 align-items: center;
-                 justify-content: center;
-             }
-         }
-
-         .header {
-             display: flex;
-
-             .menu {
-
-                 flex-wrap: wrap;
-                 align-items: flex-start;
-                 align-content: flex-start;
-                 justify-content: space-between;
-             }
-         }
+@media screen and (max-width:1300px) {
+
+    .productos {
+        .spaceImgPrincipal {
+            .sizePrincImage {
+                width: 200px;
+                height: 130px;
+            }
+        }
+    }
+}
+
+/* TAMAÑO TABLET 768PX */
+@media screen and (max-width:768px) {
+
+    .contenedorPrincipal {
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "perfil perfil"
+            "header productos"
+            "redes footer"
+        ;
+        justify-content: center;
+        place-items: center;
+
+        .contenedorGaleria {
+            grid-template-columns: repeat(5, 100px);
+            grid-template-rows: repeat(3, 140px);
+            gap: 6px 6px;
+        }
+
+
+        .perfil {
+
+            .ancho {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .header {
+            display: flex;
+
+            .menu {
+
+                flex-wrap: wrap;
+                align-items: flex-start;
+                align-content: flex-start;
+                justify-content: space-between;
+            }
+        }
+
+        .productos {
+
+
+            .spaceImgPrincipal {
+                padding: 0 1px;
+                margin: 1px 1px;
+
+                .sizePrincImage {
+                    width: 117px;
+                    height: 70px;
+                }
+
+                .subtituloPrincipal {
+                    font-size: 10px;
+
+                }
+
+                .prinBtnCarForm {
+                    .prinBtnCar {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+
+        .contenedorCarousel {
+            visibility: hidden;
+            content-visibility: hidden;
+        }
+
+        .redes {
+            display: none;
+        }
+
+    }
+
+}
+
+/* TAMAÑO MOBILE 500PX O MENOS */
+@media screen and (max-width:500px) {
+
+    .contenedorPrincipal {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr, 0.2fr 1fr 0.3fr;
+        grid-template-areas:
+            "perfil"
+            "header"
+            "productos"
+            "footer"
+        ;
+        justify-content: center;
+        place-items: center;
+
+        .contenedorGaleria {
+            grid-template-columns: repeat(5, 60px);
+            grid-template-rows: repeat(3, 100px);
+            gap: 6px 6px;
+        }
+
+
+        .perfil {
+
+            .ancho {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .header {
+            .menu {
+                display: flex;
+                flex-direction: column;
+            }
+
+        }
+
+        .contenedorCarousel {
+            visibility: hidden;
+            content-visibility: hidden;
+        }
+
+        .productos {
+
+            .subformatoPolDesc {
+                font-size: 17px;
+                text-align: left;
+            }
+
+            .formatoPoliticas {
+                font-size: 23px;
+            }
+
+            .subformatoPoliticas {
+                font-size: 21px;
+            }
+
+            .tituloPrincipal {
+                font-size: 13px;
+
+            }
+
+            .galeriaTitulo {
+                padding-top: 15px;
+            }
+
+            .subtitPrincArr {
+                visibility: hidden;
+                content-visibility: hidden;
+            }
 
-         .productos {
-
-
-             .spaceImgPrincipal {
-                 padding: 0 1px;
-                 margin: 1px 1px;
-
-                 .sizePrincImage {
-                     width: 117px;
-                     height: 70px;
-                 }
-
-                 .subtituloPrincipal {
-                     font-size: 10px;
-
-                 }
-
-                 .prinBtnCarForm {
-                     .prinBtnCar {
-                         font-size: 10px;
-                     }
-                 }
-             }
-         }
-
-         .contenedorCarousel {
-             visibility: hidden;
-             content-visibility: hidden;
-         }
-
-         .redes {
-             display: none;
-         }
-
-     }
-
- }
-
- /* TAMAÑO MOBILE 500PX O MENOS */
- @media screen and (max-width:500px) {
-
-     .contenedorPrincipal {
-         display: grid;
-         grid-template-columns: 1fr;
-         grid-template-rows: 0.3fr, 0.2fr 1fr 0.3fr;
-         grid-template-areas:
-             "perfil"
-             "header"
-             "productos"
-             "footer"
-         ;
-         justify-content: center;
-         place-items: center;
-
-         .contenedorGaleria {
-             grid-template-columns: repeat(5, 60px);
-             grid-template-rows: repeat(3, 100px);
-             gap: 6px 6px;
-         }
-
-
-         .perfil {
-
-             .ancho {
-                 display: flex;
-                 align-items: center;
-                 justify-content: center;
-             }
-         }
-
-         .header {
-             .menu {
-                 display: flex;
-                 flex-direction: column;
-             }
-
-         }
+            .princContenedorFlores {
+                display: flex;
+                flex-direction: column;
+                place-items: center;
+                text-align: center;
+                align-items: center;
+                align-content: center;
 
-         .contenedorCarousel {
-             visibility: hidden;
-             content-visibility: hidden;
-         }
+            }
 
-         .productos {
-
-             .formatoPoliticas {
-                 font-size: 48px;
-             }
-
-             .tituloPrincipal {
-                 font-size: 13px;
+            .princContenedorPeluches {
+                display: flex;
+                flex-direction: column;
+                place-items: center;
+                text-align: center;
+                align-items: center;
+                align-content: center;
 
-             }
+            }
 
-             .galeriaTitulo {
-                 padding-top: 15px;
-             }
 
-             .subtitPrincArr {
-                 visibility: hidden;
-                 content-visibility: hidden;
-             }
+            .spaceImgPrincipal {
+                padding: 0 1px;
+                margin: 1px 1px;
 
-             .princContenedorFlores {
-                 display: flex;
-                 flex-direction: column;
-                 place-items: center;
-                 text-align: center;
-                 align-items: center;
-                 align-content: center;
+                .prinBtnCarForm {
+                    .prinBtnCar {
+                        font-size: 10px;
+                    }
+                }
 
-             }
+                .sizePrincImage {
+                    width: 150px;
+                    height: 90px;
+                }
 
-             .princContenedorPeluches {
-                 display: flex;
-                 flex-direction: column;
-                 place-items: center;
-                 text-align: center;
-                 align-items: center;
-                 align-content: center;
+            }
 
-             }
+            .fontContactos {
+                font-weight: none;
+                font-size: 15px;
 
+            }
 
-             .spaceImgPrincipal {
-                 padding: 0 1px;
-                 margin: 1px 1px;
+            .formPerfilBtnContactos {
+                font-size: 15px;
+                color: rgb(84, 82, 179);
+                background-color: rgb(53, 230, 230);
+            }
+        }
 
-                 .prinBtnCarForm {
-                     .prinBtnCar {
-                         font-size: 10px;
-                     }
-                 }
+        .contenedorRedes {
+            visibility: hidden;
+            content-visibility: hidden;
+        }
 
-                 .sizePrincImage {
-                     width: 150px;
-                     height: 90px;
-                 }
 
-             }
+        .footer {
+            .contenedorFooter {
+                font-size: 10px;
 
-             .fontContactos {
-                 font-weight: none;
-                 font-size: 15px;
+                .titleFooter {
+                    font-size: 10px;
+                }
 
-             }
+                .sizeIconEmailFooter {
+                    width: 15px;
+                    margin: 1px;
 
-             .formPerfilBtnContactos {
-                 font-size: 15px;
-                 color: rgb(84, 82, 179);
-                 background-color: rgb(53, 230, 230);
-             }
-         }
+                }
+            }
+        }
 
-         .contenedorRedes {
-             visibility: hidden;
-             content-visibility: hidden;
-         }
 
+        .otros {
+            .contRegistrar {
+                font-size: 13px;
 
-         .footer {
-             .contenedorFooter {
-                 font-size: 10px;
+                .formPerfilSelected {
+                    font-size: 17px;
+                    font-family: 'gnuolane_rg-webfont';
+                    color: rgb(99, 46, 55);
+                    font-weight: bold;
 
-                 .titleFooter {
-                     font-size: 10px;
-                 }
+                }
 
-                 .sizeIconEmailFooter {
-                     width: 15px;
-                     margin: 1px;
+                .formPerfilBtn {
+                    font-size: 15px;
+                }
 
-                 }
-             }
-         }
+                .tituloPrincipal {
+                    font-size: 15px;
 
+                }
 
-         .otros {
-             .contRegistrar {
-                 font-size: 13px;
+                .titPrincRegistrarse {
+                    font-size: 20px;
+                }
 
-                 .formPerfilSelected {
-                     font-size: 17px;
-                     font-family: 'gnuolane_rg-webfont';
-                     color: rgb(99, 46, 55);
-                     font-weight: bold;
+                .tituloPrincipalSub {
 
-                 }
+                    font-size: 15px;
+                }
 
-                 .formPerfilBtn {
-                     font-size: 15px;
-                 }
+            }
+        }
 
-                 .tituloPrincipal {
-                     font-size: 15px;
+        .tituloPrincArreglos {
+            font-size: 20px;
+            text-align: center;
+            font-family: 'gnuolane_rg-webfont';
+        }
 
-                 }
+        .subtitPrincArr2 {
+            font-size: 15px;
+            text-align: justify;
+            font-family: 'gnuolane_rg-webfont';
+            color: rgb(94, 44, 52);
 
-                 .titPrincRegistrarse {
-                     font-size: 20px;
-                 }
+        }
 
-                 .tituloPrincipalSub {
+        .tituloPrincPeluches {
 
-                     font-size: 15px;
-                 }
+            font-size: 20px;
+            text-align: center;
+        }
 
-             }
-         }
+        .tituloPrincipal1 {
+            font-size: 20px;
+            color: palevioletred;
+            text-align: center;
+        }
 
-         .tituloPrincArreglos {
-             font-size: 20px;
-             text-align: center;
-             font-family: 'gnuolane_rg-webfont';
-         }
+        .tituloPrincipal2 {
+            color: palevioletred;
+            font-size: 20px;
+            text-align: center;
 
-         .subtitPrincArr2 {
-             font-size: 15px;
-             text-align: justify;
-             font-family: 'gnuolane_rg-webfont';
-             color: rgb(94, 44, 52);
+        }
 
-         }
 
-         .tituloPrincPeluches {
-
-             font-size: 20px;
-             text-align: center;
-         }
-
-         .tituloPrincipal1 {
-             font-size: 20px;
-             color: palevioletred;
-             text-align: center;
-         }
-
-         .tituloPrincipal2 {
-             color: palevioletred;
-             font-size: 20px;
-             text-align: center;
-
-         }
-
-
-     }
- }
+    }
+}

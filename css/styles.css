@@ -377,6 +377,12 @@ footer .contenedorFooter .sizeIconEmailFooter {
   margin: 3px;
 }
 
+@media screen and (max-width: 1300px) {
+  .productos .spaceImgPrincipal .sizePrincImage {
+    width: 200px;
+    height: 130px;
+  }
+}
 /* TAMAÑO TABLET 768PX */
 @media screen and (max-width: 768px) {
   .contenedorPrincipal {
@@ -385,6 +391,11 @@ footer .contenedorFooter .sizeIconEmailFooter {
     grid-template-areas: "perfil perfil" "header productos" "redes footer";
     justify-content: center;
     place-items: center;
+  }
+  .contenedorPrincipal .contenedorGaleria {
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(3, 140px);
+    gap: 6px 6px;
   }
   .contenedorPrincipal .perfil .ancho {
     display: flex;
@@ -450,8 +461,15 @@ footer .contenedorFooter .sizeIconEmailFooter {
     visibility: hidden;
     content-visibility: hidden;
   }
+  .contenedorPrincipal .productos .subformatoPolDesc {
+    font-size: 17px;
+    text-align: left;
+  }
   .contenedorPrincipal .productos .formatoPoliticas {
-    font-size: 48px;
+    font-size: 23px;
+  }
+  .contenedorPrincipal .productos .subformatoPoliticas {
+    font-size: 21px;
   }
   .contenedorPrincipal .productos .tituloPrincipal {
     font-size: 13px;
