@@ -3,11 +3,16 @@
     background-color: $bkgdPerfilContPrinc;
 
     position: fixed;
-    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 
     .ancho {
         @include flex;
-      /*   background-image: url("../assets/img/backgroundPrincipal.jfif");
+
+        /*   background-image: url("../assets/img/backgroundPrincipal.jfif");
         background-size: cover; 
  */
         .imagenTitutlo {

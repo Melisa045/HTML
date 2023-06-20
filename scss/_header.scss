@@ -1,11 +1,15 @@
 .header {
     grid-area: header;
     position: fixed;
-    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    /*z-index indica el orden de un elemento posicionado y sus descendientes*/
 
     .menu {
-   
- 
+
+
         background: linear-gradient(0deg, rgba(195, 34, 51, 1) 0%, rgba(247, 64, 228, 0.673) 100%);
 
         @include fuente;

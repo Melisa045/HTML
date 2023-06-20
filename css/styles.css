@@ -132,7 +132,11 @@ path {
   grid-area: perfil;
   background-color: white;
   position: fixed;
-  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 .perfil .ancho {
   display: flex;
@@ -161,7 +165,11 @@ path {
 .header {
   grid-area: header;
   position: fixed;
-  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  /*z-index indica el orden de un elemento posicionado y sus descendientes*/
 }
 .header .menu {
   background: linear-gradient(0deg, rgb(195, 34, 51) 0%, rgba(247, 64, 228, 0.673) 100%);
