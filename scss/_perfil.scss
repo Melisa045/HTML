@@ -3,6 +3,8 @@
     background-color: $bkgdPerfilContPrinc;
 
     position: fixed;
+    display: flex;
+
     .ancho {
         @include flex;
       /*   background-image: url("../assets/img/backgroundPrincipal.jfif");
