@@ -3,7 +3,8 @@
 
 
     .menu {
-
+        position: fixed;
+ 
         background: linear-gradient(0deg, rgba(195, 34, 51, 1) 0%, rgba(247, 64, 228, 0.673) 100%);
 
         @include fuente;

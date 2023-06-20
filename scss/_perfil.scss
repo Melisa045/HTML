@@ -2,11 +2,12 @@
     grid-area: perfil;
     background-color: $bkgdPerfilContPrinc;
 
-
+    position: fixed;
     .ancho {
         @include flex;
-
-
+      /*   background-image: url("../assets/img/backgroundPrincipal.jfif");
+        background-size: cover; 
+ */
         .imagenTitutlo {
             .sizeLogo {
                 width: 170px;

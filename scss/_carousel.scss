@@ -1,19 +1,30 @@
-.contenedorCarousel {
+.contenedorCarousel2 {
     grid-area: carousel;
+    width: 100%;
 
-    @include flex;
-    
-    .tituloCarousel {
+    /* .tituloCarousel {
         text-align: center;
         color: brown;
         margin-top: 3%;
         font-family: 'gnuolane_rg-webfont';
 
     }
+ */
+    .imagenCarousel {
+        height: 500px;
+        width: 100%;
 
+    }
+
+    #carouselExampleAutoplaying {
+        float: left;
+        margin: 15px 0 0 0;
+        width: 100%;
+
+    }
 }
 
-.carousel-control-prev-icon,
+/* .carousel-control-prev-icon,
 .carousel-control-next-icon {
     filter: invert(108%);
-}
+} */
